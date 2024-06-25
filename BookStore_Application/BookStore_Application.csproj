@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87928945-48ED-40F0-86CD-4B7CAEEBB708}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BookStore_Application</RootNamespace>
+    <AssemblyName>BookStore_Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppManager.cs" />
+    <Compile Include="Author.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorList.Designer.cs">
+      <DependentUpon>frmAuthorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDetail.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookStoreDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookStoreDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookStoreDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookStoreDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorEntry.Designer.cs">
+      <DependentUpon>frmAuthorEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookEntry.Designer.cs">
+      <DependentUpon>frmBookEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingDetail.Designer.cs">
+      <DependentUpon>frmBookingDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingEntry.Designer.cs">
+      <DependentUpon>frmBookingEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingList.Designer.cs">
+      <DependentUpon>frmBookingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookList.Designer.cs">
+      <DependentUpon>frmBookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookSystembtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookSystembtn.Designer.cs">
+      <DependentUpon>frmBookSystembtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenreEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenreEntry.Designer.cs">
+      <DependentUpon>frmGenreEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenreList.Designer.cs">
+      <DependentUpon>frmGenreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublishHouseEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublishHouseEntry.Designer.cs">
+      <DependentUpon>frmPublishHouseEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublishHouseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublishHouseList.Designer.cs">
+      <DependentUpon>frmPublishHouseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseDetail.Designer.cs">
+      <DependentUpon>frmPurchaseDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseEntry.Designer.cs">
+      <DependentUpon>frmPurchaseEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseList.Designer.cs">
+      <DependentUpon>frmPurchaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaleDetail.Designer.cs">
+      <DependentUpon>frmSaleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaleEntry.Designer.cs">
+      <DependentUpon>frmSaleEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaleList.Designer.cs">
+      <DependentUpon>frmSaleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockEntry.Designer.cs">
+      <DependentUpon>frmStockEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockList.Designer.cs">
+      <DependentUpon>frmStockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierEntry.Designer.cs">
+      <DependentUpon>frmSupplierEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierList.Designer.cs">
+      <DependentUpon>frmSupplierList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genre.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublishingHouse.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseDetail.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaleDetail.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="BookStoreDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BookStoreDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BookStoreDBModel.edmx.diagram">
+      <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BookStoreDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BookStoreDBModel.Context.cs</LastGenOutput>
+      <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="BookStoreDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
+      <LastGenOutput>BookStoreDBModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAuthorEntry.resx">
+      <DependentUpon>frmAuthorEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthorList.resx">
+      <DependentUpon>frmAuthorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookEntry.resx">
+      <DependentUpon>frmBookEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookingEntry.resx">
+      <DependentUpon>frmBookingEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookingList.resx">
+      <DependentUpon>frmBookingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookList.resx">
+      <DependentUpon>frmBookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookSystembtn.resx">
+      <DependentUpon>frmBookSystembtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenreEntry.resx">
+      <DependentUpon>frmGenreEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenreList.resx">
+      <DependentUpon>frmGenreList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublishHouseEntry.resx">
+      <DependentUpon>frmPublishHouseEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublishHouseList.resx">
+      <DependentUpon>frmPublishHouseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockEntry.resx">
+      <DependentUpon>frmStockEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockList.resx">
+      <DependentUpon>frmStockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierEntry.resx">
+      <DependentUpon>frmSupplierEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierList.resx">
+      <DependentUpon>frmSupplierList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
