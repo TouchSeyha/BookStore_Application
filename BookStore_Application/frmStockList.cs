@@ -25,7 +25,7 @@ namespace BookStore_Application
             foreach (Stock c in db.Stocks)
             {
                 dgvStock.Rows.Add(c.StockId,
-                                        c.BookId,
+                                        c.Book.Title,
                                         c.Quantity,
                                         c.Created,
                                         c.Updated);

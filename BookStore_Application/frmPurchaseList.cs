@@ -16,5 +16,40 @@ namespace BookStore_Application
         {
             InitializeComponent();
         }
+
+        private BookStoreDBEntities db = new BookStoreDBEntities();
+
+        public frmPurchaseEntry PurchaseEntry = null;
+
+        private void frmPurchaseList_Load(object sender, EventArgs e)
+        {
+            foreach (Purchase c in db.Purchases)
+            {
+                dgvPurchase.Rows.Add(c.PurchaseId,
+                                        c.Employee.EmployeeName,
+                                        c.Supplier.SupplierName,
+                                        c.TotalAmount,
+                                        c.AmountPaid,
+                                        c.AmountRemain,
+                                        c.TotalDiscount,
+                                        c.Created,
+                                        c.Updated);
+            }
+        }
+
+        private void dgvPurchase_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (PurchaseEntry != null)
+            {
+                if (dgvPurchase.SelectedRows.Count > 0)
+                {
+                    string value = dgvPurchase.SelectedRows[0].Cells[0].Value.ToString();
+                    int PurchaseId = int.Parse(value);
+
+                    PurchaseEntry.LoadDataFromPurchaseId(PurchaseId;
+                    Close();
+                }
+            }
+        }
     }
 }

@@ -21,6 +21,8 @@ namespace BookStore_Application
 
         public frmBookEntry bookEntry = null;
 
+        public frmBookingEntry bookingEntry = null;
+
         private void frmBookList_Load(object sender, EventArgs e)
         {
             foreach (Book c in db.Books)

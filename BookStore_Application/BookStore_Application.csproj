@@ -58,6 +58,7 @@
     <Compile Include="Author.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ClsTemProduct.cs" />
     <Compile Include="frmAuthorList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPublishHouseList.resx">
       <DependentUpon>frmPublishHouseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseList.resx">
+      <DependentUpon>frmPurchaseList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStockEntry.resx">
       <DependentUpon>frmStockEntry.cs</DependentUpon>

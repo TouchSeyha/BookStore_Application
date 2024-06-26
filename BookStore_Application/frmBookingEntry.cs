@@ -26,15 +26,26 @@ namespace BookStore_Application
 
         private void Clear()
         {
-            txtBookingId.Text = (GetLatestBookingId() + 1).ToString();
-            txtEmployeeId.Text = "";
-            txtCustomerId.Text = "";
-            txtTotalAmount.Text = "";
-            txtTotalDiscount.Text = "";
-            txtFinalAmount.Text = "";
-            txtAmountPaid.Text = "";
-            txtAmountRemain.Text = "";
-            txtNote.Text = "";
+            txtInvoice.Text = (GetLatestBookingId() + 1).ToString();
+            cmbCustomer.Text = "";
+            cmbEmployee.Text = "";
+            txtBookTitle.Text = "";
+            txtSellingprice.Text = "";
+            txtQuantity.Text = "";
+            txtTotalPrice.Text = "";
+            txtDiscount.Text = "";
+            lblStock.Text = "";
+
+            foreach (Customer c in db.Customers)
+            {
+                cmbCustomer.Items.Add(c.CustomerName);
+            }
+            foreach (Employee emp in db.Employees)
+            {
+                cmbEmployee.Items.Add(emp.EmployeeName);
+            }
+
+            cmbEmployee.Text = AppManager.GetInstance().loginEmployee.EmployeeName;
         }
 
         private int GetLatestBookingId()
@@ -73,26 +84,31 @@ namespace BookStore_Application
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Booking booking = new Booking();
 
-            booking.BookingId = GetLatestBookingId() + 1;
-            booking.EmployeeId = int.Parse(txtEmployeeId.Text);
-            booking.CustomerId = int.Parse(txtCustomerId.Text);
-            booking.TotalAmount = decimal.Parse(txtTotalAmount.Text);
-            booking.TotalDiscount = decimal.Parse(txtTotalDiscount.Text);
-            booking.FinalAmount = decimal.Parse(txtFinalAmount.Text);
-            booking.AmountPaid = decimal.Parse(txtAmountPaid.Text);
-            booking.AmountRemain = decimal.Parse(txtAmountRemain.Text);
-            booking.Note = txtNote.Text;
-            booking.Created = DateTime.Now;
-            booking.Updated = DateTime.Now;
+            if (string.IsNullOrEmpty(txtBookTitle.Text))
+            {
+                MessageBox.Show("Please Select a Book!");
+                return;
+            }
 
-            db.Bookings.Add(booking);
-            db.SaveChanges();
+            if (!string.IsNullOrEmpty(txtSellingprice.Text) &&
+                !string.IsNullOrEmpty(txtQuantity.Text))
+            {
+                string productName = txtBookTitle.Text;
+                double sellingPrice = double.Parse(txtSellingprice.Text);
+                int quantity = int.Parse(txtQuantity.Text);
 
-            MessageBox.Show("Book Added Successfully!");
+                double totalPrice = sellingPrice * quantity;
+                string totalDiscount = txtBookTitle.Tag.ToString();
 
-            Clear();
+                ClsTempProduct product = new ClsTempProduct(productName, sellingPrice, quantity, totalPrice, unit);
+                tempProductList.Add(product);
+
+                BindProductList();
+                Clear();
+            }
+
+            txtFinalTotalPrice.Text = GetTotalAmount().ToString();
 
         }
 
@@ -159,6 +175,14 @@ namespace BookStore_Application
 
             frmBookingList.bookingEntry = this;
             frmBookingList.Show();
+        }
+
+        private void btnShowBookId_Click(object sender, EventArgs e)
+        {
+            frmBookList bookList = new frmBookList();
+
+            bookList.bookingEntry = this;
+            bookList.ShowDialog();
         }
     }
 }
