@@ -14,11 +14,20 @@ namespace BookStore_Application
     
     public partial class PublishingHouse
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PublishingHouse()
+        {
+            this.Books = new HashSet<Book>();
+        }
+    
         public int PublishingHouseId { get; set; }
         public string PublishingHouseName { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
         public System.DateTime Created { get; set; }
         public System.DateTime Updated { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Book> Books { get; set; }
     }
 }

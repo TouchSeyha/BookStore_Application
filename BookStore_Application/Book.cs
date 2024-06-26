@@ -43,5 +43,8 @@ namespace BookStore_Application
         public virtual ICollection<SaleDetail> SaleDetails { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Stock> Stocks { get; set; }
+        public virtual Author Author { get; set; }
+        public virtual Genre Genre { get; set; }
+        public virtual PublishingHouse PublishingHouse { get; set; }
     }
 }

@@ -16,5 +16,11 @@ namespace BookStore_Application
         {
             InitializeComponent();
         }
+
+        private BookStoreDBEntities db = new BookStoreDBEntities();
+        private void frmBookSystembtn_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

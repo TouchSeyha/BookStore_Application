@@ -238,6 +238,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="PublishingHouse.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
     </Compile>
@@ -257,6 +262,9 @@
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Supplier.cs">
+      <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -282,6 +290,15 @@
       <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
       <LastGenOutput>BookStoreDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\maxresdefault.jpg" />
+    <None Include="Resources\Lofi wallpaper.jpg" />
+    <None Include="Resources\2550234.jpg" />
+    <None Include="Resources\858754.jpg" />
+    <None Include="Resources\1oRavUh.jpg" />
+    <None Include="Resources\lofigirl-lofi-artwork-digital-art-2d-hd-wallpaper-preview.jpg" />
+    <None Include="Resources\zJywIf.jpg" />
+    <None Include="Resources\Mountain.jpg" />
+    <None Include="Resources\Walpaper [1920_1080].jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -323,8 +340,20 @@
     <EmbeddedResource Include="frmPublishHouseList.resx">
       <DependentUpon>frmPublishHouseList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseDetail.resx">
+      <DependentUpon>frmPurchaseDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseEntry.resx">
+      <DependentUpon>frmPurchaseEntry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPurchaseList.resx">
       <DependentUpon>frmPurchaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaleEntry.resx">
+      <DependentUpon>frmSaleEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaleList.resx">
+      <DependentUpon>frmSaleList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStockEntry.resx">
       <DependentUpon>frmStockEntry.cs</DependentUpon>
@@ -340,6 +369,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

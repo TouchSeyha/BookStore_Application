@@ -14,9 +14,18 @@ namespace BookStore_Application
     
     public partial class Genre
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Genre()
+        {
+            this.Books = new HashSet<Book>();
+        }
+    
         public int GenreId { get; set; }
         public string GenreName { get; set; }
         public System.DateTime Created { get; set; }
         public System.DateTime Updated { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Book> Books { get; set; }
     }
 }

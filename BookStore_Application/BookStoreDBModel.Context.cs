@@ -39,5 +39,6 @@ namespace BookStore_Application
         public virtual DbSet<SaleDetail> SaleDetails { get; set; }
         public virtual DbSet<Stock> Stocks { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

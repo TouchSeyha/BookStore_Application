@@ -146,8 +146,7 @@ namespace BookStore_Application
         {
             frmBookList bookList = new frmBookList();
 
-            frmBookEntry bookEntryInstance = new frmBookEntry();
-            bookList.bookEntry = bookEntryInstance;
+            bookList.StockEntry = this;
             bookList.ShowDialog();
 
         }

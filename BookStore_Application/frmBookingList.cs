@@ -21,13 +21,15 @@ namespace BookStore_Application
 
         public frmBookingEntry bookingEntry = null;
 
+        public frmSaleEntry saleEntry = null;
+
         private void frmBookingList_Load(object sender, EventArgs e)
         {
             foreach (Booking c in db.Bookings)
             {
                 dgvBooking.Rows.Add(c.BookingId,
-                                        c.EmployeeId,
-                                        c.CustomerId,
+                                        c.Employee.EmployeeName,
+                                        c.Customer.CustomerName,
                                         c.TotalAmount,
                                         c.TotalDiscount,
                                         c.FinalAmount,

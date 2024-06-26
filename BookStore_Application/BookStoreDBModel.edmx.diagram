@@ -32,6 +32,10 @@
         <AssociationConnector Association="BookStoreDBModel.FK__Purchase__Suppli__4D94879B" ManuallyRouted="false" />
         <AssociationConnector Association="BookStoreDBModel.FK__PurchaseD__Purch__5070F446" ManuallyRouted="false" />
         <AssociationConnector Association="BookStoreDBModel.FK__SaleDetai__SaleI__48CFD27E" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BookStoreDBModel.sysdiagram" Width="1.5" PointX="8.375" PointY="4.75" />
+        <AssociationConnector Association="BookStoreDBModel.FK_Book_Author" />
+        <AssociationConnector Association="BookStoreDBModel.FK_Book_Genre" />
+        <AssociationConnector Association="BookStoreDBModel.FK_Book_PublishingHouse" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

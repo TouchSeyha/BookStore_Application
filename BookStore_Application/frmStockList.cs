@@ -20,6 +20,10 @@ namespace BookStore_Application
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
         public frmStockEntry StockEntry = null;
+
+        public frmBookingEntry BookingEntry = null;
+
+        public  frmBookEntry bookEntry = null;
         private void frmStockList_Load(object sender, EventArgs e)
         {
             foreach (Stock c in db.Stocks)

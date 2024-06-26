@@ -43,9 +43,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Location = new System.Drawing.Point(-1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(435, 51);
+            this.panel1.Size = new System.Drawing.Size(436, 64);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -54,11 +54,11 @@
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.No;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(145, 8);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 35F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.Info;
+            this.label1.Location = new System.Drawing.Point(135, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 41);
+            this.label1.Size = new System.Drawing.Size(172, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "LOGIN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -109,7 +109,7 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.LightGreen;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnLogin.Font = new System.Drawing.Font("Modern No. 20", 16F);
             this.btnLogin.Location = new System.Drawing.Point(82, 250);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(119, 39);
@@ -121,7 +121,7 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.IndianRed;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnClose.Font = new System.Drawing.Font("Modern No. 20", 16F);
             this.btnClose.Location = new System.Drawing.Point(229, 250);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(119, 39);

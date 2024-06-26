@@ -23,15 +23,18 @@ namespace BookStore_Application
 
         public frmBookingEntry bookingEntry = null;
 
+        public frmStockEntry StockEntry = null;
+
         private void frmBookList_Load(object sender, EventArgs e)
         {
             foreach (Book c in db.Books)
             {
+               
                 dgvBook.Rows.Add(c.BookId,
                                         c.Title,
-                                        c.AuthorId,
-                                        c.PublishingHouseId,
-                                        c.GenreId,
+                                        c.Author.AuthorName,
+                                        c.PublishingHouse.PublishingHouseName,
+                                        c.Genre.GenreName,
                                         c.TotalPage,
                                         c.CostPrice,
                                         c.SellingPrice,

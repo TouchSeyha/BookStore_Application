@@ -21,6 +21,12 @@ namespace BookStore_Application
 
         public frmAuthorEntry authorEntry = null;
 
+        public frmBookEntry bookEntry = null;
+
+        public frmBookingEntry bookingEntry = null;
+
+        public frmStockEntry StockEntry = null;
+
         private void frmAuthorList_Load(object sender, EventArgs e)
         {
             foreach (Author c in db.Authors)

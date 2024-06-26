@@ -9,20 +9,20 @@ namespace BookStore_Application
     public class ClsTempProduct
     {
         public string Name { get; set; }
-        public double SelllingPrice { get; set; }
+        public decimal SellingPrice { get; set; }
         public int Quantity { get; set; }
-        public double TotalPrice { get; set; }
-        public double TotalDiscount { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal TotalDiscount { get; set; }
 
         public ClsTempProduct()
         {
 
         }
 
-        public ClsTempProduct(string name, double sellingPrice, int quantity, double totalPrice, double TotalDiscount)
+        public ClsTempProduct(string name, decimal sellingPrice, int quantity, decimal totalPrice, decimal totalDiscount)
         {
             Name = name;
-            SelllingPrice = sellingPrice;
+            SellingPrice = sellingPrice;
             Quantity = quantity;
             TotalPrice = totalPrice;
             TotalDiscount = totalPrice;

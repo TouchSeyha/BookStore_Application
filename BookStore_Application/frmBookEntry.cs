@@ -56,9 +56,9 @@ namespace BookStore_Application
             {
                 txtBookId.Text = book.BookId.ToString();
                 txtTitle.Text = book.Title.ToString();
-                txtAuthorId.Text = book.BookId.ToString();
-                txtPublishId.Text = book.PublishingHouseId.ToString();
-                txtGenreId.Text = book.GenreId.ToString();
+                txtAuthorId.Text = book.Author.AuthorName.ToString();
+                txtPublishId.Text = book.PublishingHouse.PublishingHouseName.ToString();
+                txtGenreId.Text = book.Genre.GenreName.ToString();
                 txtTotalPage.Text = book.TotalPage.ToString();
                 txtCostPrice.Text = book.CostPrice.ToString();
                 txtSellingPrice.Text = book.SellingPrice.ToString();
@@ -99,9 +99,9 @@ namespace BookStore_Application
         {
             int bookId = int.Parse(txtBookId.Text);
             string bookTitle = txtTitle.Text;
-            int authorId = int.Parse(txtAuthorId.Text);
-            int publishingHouseId = int.Parse(txtPublishId.Text);
-            int genreId = int.Parse (txtGenreId.Text);
+            string authorId = txtAuthorId.Text;
+            string publishingHouseId = txtPublishId.Text;
+            string genreId = txtGenreId.Text;
             int totalPage = int.Parse(txtTotalPage.Text);
             decimal costPrice = decimal.Parse(txtCostPrice.Text);
             decimal sellingPrice = decimal.Parse(txtSellingPrice.Text);
@@ -113,9 +113,9 @@ namespace BookStore_Application
             if (book != null)
             {
                 book.Title = bookTitle;
-                book.AuthorId = authorId;
-                book.PublishingHouseId = publishingHouseId;
-                book.GenreId = genreId;
+                book.Author.AuthorName = authorId;
+                book.PublishingHouse.PublishingHouseName = publishingHouseId;
+                book.Genre.GenreName = genreId;
                 book.TotalPage = totalPage;
                 book.CostPrice = costPrice;
                 book.SellingPrice = sellingPrice;
