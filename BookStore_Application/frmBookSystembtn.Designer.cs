@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.cmbEmployee = new System.Windows.Forms.ComboBox();
             this.cmbCustomer = new System.Windows.Forms.ComboBox();
             this.txtInvoice = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtDiscount = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,17 +61,17 @@
             this.btnClearNew = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtboxAmountRemain = new System.Windows.Forms.TextBox();
             this.txtboxFinalTotalPrice = new System.Windows.Forms.TextBox();
             this.txtAmountRemain = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooking)).BeginInit();
             this.panel4.SuspendLayout();
@@ -97,6 +97,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 89);
             this.panel1.TabIndex = 92;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 15F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(1, -1);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 89);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Book Store";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
             // 
@@ -141,9 +155,9 @@
             this.label12.Location = new System.Drawing.Point(131, 31);
             this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(174, 31);
+            this.label12.Size = new System.Drawing.Size(163, 31);
             this.label12.TabIndex = 84;
-            this.label12.Text = "Booking ID :";
+            this.label12.Text = "Invoice ID :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbEmployee
@@ -182,20 +196,6 @@
             this.txtInvoice.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtInvoice.Size = new System.Drawing.Size(67, 32);
             this.txtInvoice.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 15F);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1, -1);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 89);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Book Store";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtDiscount
             // 
@@ -492,6 +492,77 @@
             this.panel3.Size = new System.Drawing.Size(428, 289);
             this.panel3.TabIndex = 94;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(79, 148);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(271, 32);
+            this.textBox1.TabIndex = 95;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
+            this.label4.Location = new System.Drawing.Point(158, 108);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 32);
+            this.label4.TabIndex = 96;
+            this.label4.Text = "Amount";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
+            this.label1.Location = new System.Drawing.Point(104, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 32);
+            this.label1.TabIndex = 93;
+            this.label1.Text = "Final Total Price";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtboxAmountRemain
+            // 
+            this.txtboxAmountRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxAmountRemain.Location = new System.Drawing.Point(79, 228);
+            this.txtboxAmountRemain.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxAmountRemain.Name = "txtboxAmountRemain";
+            this.txtboxAmountRemain.ReadOnly = true;
+            this.txtboxAmountRemain.Size = new System.Drawing.Size(271, 32);
+            this.txtboxAmountRemain.TabIndex = 92;
+            this.txtboxAmountRemain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtboxFinalTotalPrice
+            // 
+            this.txtboxFinalTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxFinalTotalPrice.Location = new System.Drawing.Point(79, 68);
+            this.txtboxFinalTotalPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxFinalTotalPrice.Name = "txtboxFinalTotalPrice";
+            this.txtboxFinalTotalPrice.ReadOnly = true;
+            this.txtboxFinalTotalPrice.Size = new System.Drawing.Size(271, 32);
+            this.txtboxFinalTotalPrice.TabIndex = 91;
+            this.txtboxFinalTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtAmountRemain
+            // 
+            this.txtAmountRemain.AutoSize = true;
+            this.txtAmountRemain.BackColor = System.Drawing.Color.Transparent;
+            this.txtAmountRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
+            this.txtAmountRemain.Location = new System.Drawing.Point(106, 188);
+            this.txtAmountRemain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtAmountRemain.Name = "txtAmountRemain";
+            this.txtAmountRemain.Size = new System.Drawing.Size(217, 32);
+            this.txtAmountRemain.TabIndex = 94;
+            this.txtAmountRemain.Text = "Amount Remain";
+            this.txtAmountRemain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -579,77 +650,6 @@
             this.btnAdd.TabIndex = 63;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(79, 148);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(271, 32);
-            this.textBox1.TabIndex = 95;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.label4.Location = new System.Drawing.Point(158, 108);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 32);
-            this.label4.TabIndex = 96;
-            this.label4.Text = "Amount";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.label1.Location = new System.Drawing.Point(104, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 32);
-            this.label1.TabIndex = 93;
-            this.label1.Text = "Final Total Price";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtboxAmountRemain
-            // 
-            this.txtboxAmountRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxAmountRemain.Location = new System.Drawing.Point(79, 228);
-            this.txtboxAmountRemain.Margin = new System.Windows.Forms.Padding(2);
-            this.txtboxAmountRemain.Name = "txtboxAmountRemain";
-            this.txtboxAmountRemain.ReadOnly = true;
-            this.txtboxAmountRemain.Size = new System.Drawing.Size(271, 32);
-            this.txtboxAmountRemain.TabIndex = 92;
-            this.txtboxAmountRemain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtboxFinalTotalPrice
-            // 
-            this.txtboxFinalTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxFinalTotalPrice.Location = new System.Drawing.Point(79, 68);
-            this.txtboxFinalTotalPrice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtboxFinalTotalPrice.Name = "txtboxFinalTotalPrice";
-            this.txtboxFinalTotalPrice.ReadOnly = true;
-            this.txtboxFinalTotalPrice.Size = new System.Drawing.Size(271, 32);
-            this.txtboxFinalTotalPrice.TabIndex = 91;
-            this.txtboxFinalTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtAmountRemain
-            // 
-            this.txtAmountRemain.AutoSize = true;
-            this.txtAmountRemain.BackColor = System.Drawing.Color.Transparent;
-            this.txtAmountRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.txtAmountRemain.Location = new System.Drawing.Point(106, 188);
-            this.txtAmountRemain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.txtAmountRemain.Name = "txtAmountRemain";
-            this.txtAmountRemain.Size = new System.Drawing.Size(217, 32);
-            this.txtAmountRemain.TabIndex = 94;
-            this.txtAmountRemain.Text = "Amount Remain";
-            this.txtAmountRemain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmBookSystembtn
             // 
