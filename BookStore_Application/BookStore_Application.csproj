@@ -297,14 +297,18 @@
       <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
       <LastGenOutput>BookStoreDBModel.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\maxresdefault.jpg" />
+    <None Include="Resources\Pure Color Pigment Inkjet Splash Cool Background, Color, Gradient, Pigment Background Image And Wallpaper for Free Download1.jpg" />
+    <None Include="Resources\56dc47d9-31b7-4313-b2ca-f96f5157c7261.jpg" />
+    <None Include="Resources\Miami WPLC02141.jpg" />
+    <None Include="Resources\Download premium vector of Colorful fluid gradient background vector by Kappy about composition, fluid gradients, liquid gradient, 3d, and abstract 5588791.jpg" />
+    <None Include="Resources\Black Texture Texture Background Wallpaper Image For Free Download - Pngtree1.jpg" />
+    <None Include="Resources\Black Texture Texture Background Wallpaper Image For Free Download - Pngtree.jpg" />
+    <None Include="Resources\56dc47d9-31b7-4313-b2ca-f96f5157c726.jpg" />
+    <None Include="Resources\Miami WPLC0214.jpg" />
+    <None Include="Resources\Pure Color Pigment Inkjet Splash Cool Background, Color, Gradient, Pigment Background Image And Wallpaper for Free Download.jpg" />
+    <None Include="Resources\Download premium vector of Colorful fluid gradient background vector by Kappy about composition, fluid gradients, liquid gradient, 3d, and abstract 558879.jpg" />
     <None Include="Resources\Lofi wallpaper.jpg" />
-    <None Include="Resources\2550234.jpg" />
-    <None Include="Resources\858754.jpg" />
-    <None Include="Resources\1oRavUh.jpg" />
     <None Include="Resources\lofigirl-lofi-artwork-digital-art-2d-hd-wallpaper-preview.jpg" />
-    <None Include="Resources\zJywIf.jpg" />
-    <None Include="Resources\Mountain.jpg" />
     <None Include="Resources\Walpaper [1920_1080].jpg" />
   </ItemGroup>
   <ItemGroup>

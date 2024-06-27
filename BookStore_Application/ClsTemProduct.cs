@@ -12,20 +12,19 @@ namespace BookStore_Application
         public decimal SellingPrice { get; set; }
         public int Quantity { get; set; }
         public decimal TotalPrice { get; set; }
-        public decimal TotalDiscount { get; set; }
+        //public decimal TotalDiscount { get; set; }
 
         public ClsTempProduct()
         {
 
         }
 
-        public ClsTempProduct(string name, decimal sellingPrice, int quantity, decimal totalPrice, decimal totalDiscount)
+        public ClsTempProduct(string name, decimal sellingPrice, int quantity, decimal totalPrice)
         {
             Name = name;
             SellingPrice = sellingPrice;
             Quantity = quantity;
             TotalPrice = totalPrice;
-            TotalDiscount = totalDiscount;
         }
     }
 }

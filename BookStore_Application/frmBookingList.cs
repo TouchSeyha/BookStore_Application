@@ -22,11 +22,7 @@ namespace BookStore_Application
 
         public frmBookingEntry bookingEntry = null;
 
-        public frmSaleEntry saleEntry = null;
-
         public frmBookEntry bookEntry = null;
-
-        public frmPurchaseEntry purchaseEntry = null;
 
         private void frmBookingList_Load(object sender, EventArgs e)
         {
@@ -51,7 +47,7 @@ namespace BookStore_Application
                     string value = dgvBooking.SelectedRows[0].Cells[0].Value.ToString();
                     int BookingId = int.Parse(value);
 
-                    bookingEntry.LoadDataFromBookingId(BookingId);
+                    bookingEntry.LoadDataFromInvoice(BookingId);
                     Close();
                 }
             }

@@ -70,22 +70,6 @@ namespace BookStore_Application
             return 0;
         }
 
-        public void LoadDataFromBookingId(int bookingId)
-        {
-            var book = db.Bookings
-                            .Where(c => c.BookingId == bookingId)
-                            .FirstOrDefault();
-            if (book != null)
-            {
-                /*txtTitle.Text = book.Book.Title.ToString();
-                txtAuthorId.Text = book.BookId.ToString();
-                txtPublishId.Text = book.PublishingHouseId.ToString();
-                txtGenreId.Text = book.GenreId.ToString();
-                txtTotalPage.Text = book.TotalPage.ToString();
-                txtCostPrice.Text = book.CostPrice.ToString();
-                txtSellingPrice.Text = book.SellingPrice.ToString();*/
-            }
-        }
         // Load to txt box
         public void LoadDataToForm(int bookingId)
         {
@@ -126,7 +110,7 @@ namespace BookStore_Application
         {
             MainClear();
         }
-        //Create New ClsTempBooking
+
         private void BindProductList()
         {
             dgvBooking.Rows.Clear();
@@ -158,9 +142,8 @@ namespace BookStore_Application
                 decimal sellingPrice = decimal.Parse(txtSellingprice.Text);
                 int quantity = int.Parse(txtQuantity.Text);
                 decimal totalPrice = sellingPrice * quantity;
-                decimal totalDiscount = totalPrice; // Fix later for discount
 
-                ClsTempProduct product = new ClsTempProduct(productName, sellingPrice, quantity, totalPrice, totalDiscount);
+                ClsTempProduct product = new ClsTempProduct(productName, sellingPrice, quantity, totalPrice);
                 tempProductList.Add(product);
 
                 BindProductList();
@@ -169,44 +152,6 @@ namespace BookStore_Application
 
             txtboxFinalTotalPrice.Text = GetTotalAmount().ToString();
 
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            /*int bookingId = int.Parse(txtBookingId.Text);
-            int empId = int.Parse(txtEmployeeId.Text);
-            int cusId = int.Parse(txtCustomerId.Text);
-            decimal totalAm = decimal.Parse(txtTotalAmount.Text);
-            decimal totalDis = decimal.Parse(txtTotalDiscount.Text);
-            decimal finalAm = decimal.Parse(txtFinalAmount.Text);
-            decimal amountPaid = decimal.Parse(txtAmountPaid.Text);
-            decimal amountRemain = decimal.Parse(txtAmountRemain.Text);
-            string note = txtNote.Text;
-
-            var booking = db.Bookings
-                        .Where(c => c.BookingId == bookingId)
-                        .FirstOrDefault();
-
-            if (booking != null)
-            {
-                booking.EmployeeId = int.Parse(txtEmployeeId.Text);
-                booking.CustomerId = int.Parse(txtCustomerId.Text);
-                booking.TotalAmount = decimal.Parse(txtTotalAmount.Text);
-                booking.TotalDiscount = decimal.Parse(txtTotalDiscount.Text);
-                booking.FinalAmount = decimal.Parse(txtFinalAmount.Text);
-                booking.AmountPaid = decimal.Parse(txtAmountPaid.Text);
-                booking.AmountRemain = decimal.Parse(txtAmountRemain.Text);
-                booking.Note = txtNote.Text;
-                booking.Updated = DateTime.Now;
-
-                db.SaveChanges();
-                MessageBox.Show("Booking Update Successfully!");
-                Clear();
-            }
-            else
-            {
-                MessageBox.Show("Booking Update Failed: Booking ID not found.");
-            }*/
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -302,11 +247,6 @@ namespace BookStore_Application
                 Stock stock = db.Stocks
                                 .Where(s => s.BookId == productId)
                                 .FirstOrDefault();
-
-                /*if (stock != null)
-                {
-                    stock.Quantity -= product.Quantity;
-                }*/
 
                 db.BookingDetails.Add(sd);
                 db.SaveChanges();

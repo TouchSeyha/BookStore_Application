@@ -83,9 +83,40 @@ namespace BookStore_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _56dc47d9_31b7_4313_b2ca_f96f5157c726 {
+            get {
+                object obj = ResourceManager.GetObject("56dc47d9-31b7-4313-b2ca-f96f5157c726", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _858754 {
             get {
                 object obj = ResourceManager.GetObject("858754", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Black_Texture_Texture_Background_Wallpaper_Image_For_Free_Download___Pngtree {
+            get {
+                object obj = ResourceManager.GetObject("Black Texture Texture Background Wallpaper Image For Free Download - Pngtree", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Download_premium_vector_of_Colorful_fluid_gradient_background_vector_by_Kappy_about_composition__fluid_gradients__liquid_gradient__3d__and_abstract_558879 {
+            get {
+                object obj = ResourceManager.GetObject("Download premium vector of Colorful fluid gradient background vector by Kappy abo" +
+                        "ut composition, fluid gradients, liquid gradient, 3d, and abstract 558879", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +154,30 @@ namespace BookStore_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Miami_WPLC0214 {
+            get {
+                object obj = ResourceManager.GetObject("Miami WPLC0214", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mountain {
             get {
                 object obj = ResourceManager.GetObject("Mountain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pure_Color_Pigment_Inkjet_Splash_Cool_Background__Color__Gradient__Pigment_Background_Image_And_Wallpaper_for_Free_Download {
+            get {
+                object obj = ResourceManager.GetObject("Pure Color Pigment Inkjet Splash Cool Background, Color, Gradient, Pigment Backgr" +
+                        "ound Image And Wallpaper for Free Download", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

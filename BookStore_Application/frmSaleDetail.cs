@@ -19,8 +19,6 @@ namespace BookStore_Application
 
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
-        public frmSaleEntry saleEntry = null;
-
         public frmBookingEntry bookingEntry = null;
 
         private void frmSaleDetail_Load(object sender, EventArgs e)

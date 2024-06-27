@@ -118,12 +118,6 @@ namespace BookStore_Application
             frmPurchaseList.Show();
         }
 
-        private void saleEntryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmSaleEntry frmSaleEntry = new frmSaleEntry();
-            frmSaleEntry.Show();
-        }
-
         private void saleListToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSaleList frmSaleList = new frmSaleList();

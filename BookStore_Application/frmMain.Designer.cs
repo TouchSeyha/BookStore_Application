@@ -55,7 +55,6 @@
             this.purchaseEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saleEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saleListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookingDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,6 +71,7 @@
             this.menuStrip1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.menuStrip1.BackgroundImage = global::BookStore_Application.Properties.Resources.zJywIf;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
@@ -82,7 +82,7 @@
             this.publishingHouseToolStripMenuItem,
             this.supplierToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(117, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(119, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.Size = new System.Drawing.Size(613, 68);
@@ -91,10 +91,11 @@
             // 
             // authorToolStripMenuItem
             // 
-            this.authorToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.authorToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.authorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.authorEntryToolStripMenuItem,
             this.authorListToolStripMenuItem});
+            this.authorToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.authorToolStripMenuItem.Name = "authorToolStripMenuItem";
             this.authorToolStripMenuItem.Size = new System.Drawing.Size(99, 64);
             this.authorToolStripMenuItem.Text = "Author";
@@ -115,9 +116,11 @@
             // 
             // bookToolStripMenuItem
             // 
+            this.bookToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.bookToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bookEntryToolStripMenuItem,
             this.bookListToolStripMenuItem});
+            this.bookToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
             this.bookToolStripMenuItem.Size = new System.Drawing.Size(80, 64);
             this.bookToolStripMenuItem.Text = "Book";
@@ -138,9 +141,11 @@
             // 
             // genreToolStripMenuItem
             // 
+            this.genreToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.genreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.genreEntryToolStripMenuItem,
             this.genreListToolStripMenuItem});
+            this.genreToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
             this.genreToolStripMenuItem.Size = new System.Drawing.Size(90, 64);
             this.genreToolStripMenuItem.Text = "Genre";
@@ -161,9 +166,11 @@
             // 
             // publishingHouseToolStripMenuItem
             // 
+            this.publishingHouseToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.publishingHouseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.publishingHouseEntryToolStripMenuItem,
             this.publishingHouseListToolStripMenuItem});
+            this.publishingHouseToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.publishingHouseToolStripMenuItem.Name = "publishingHouseToolStripMenuItem";
             this.publishingHouseToolStripMenuItem.Size = new System.Drawing.Size(212, 64);
             this.publishingHouseToolStripMenuItem.Text = "Publishing House";
@@ -184,9 +191,11 @@
             // 
             // supplierToolStripMenuItem
             // 
+            this.supplierToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.supplierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.supplierEntryToolStripMenuItem,
             this.supplierListToolStripMenuItem});
+            this.supplierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
             this.supplierToolStripMenuItem.Size = new System.Drawing.Size(114, 64);
             this.supplierToolStripMenuItem.Text = "Supplier";
@@ -208,7 +217,7 @@
             // menuStrip2
             // 
             this.menuStrip2.AutoSize = false;
-            this.menuStrip2.BackColor = System.Drawing.SystemColors.Info;
+            this.menuStrip2.BackColor = System.Drawing.Color.Ivory;
             this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 17F);
             this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(1);
@@ -222,7 +231,8 @@
             this.menuStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(117, 496);
+            this.menuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip2.Size = new System.Drawing.Size(117, 518);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -301,24 +311,16 @@
             // saleToolStripMenuItem
             // 
             this.saleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saleEntryToolStripMenuItem,
             this.saleListToolStripMenuItem});
             this.saleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 17.25F, System.Drawing.FontStyle.Bold);
             this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
             this.saleToolStripMenuItem.Size = new System.Drawing.Size(69, 35);
             this.saleToolStripMenuItem.Text = "Sale";
             // 
-            // saleEntryToolStripMenuItem
-            // 
-            this.saleEntryToolStripMenuItem.Name = "saleEntryToolStripMenuItem";
-            this.saleEntryToolStripMenuItem.Size = new System.Drawing.Size(192, 36);
-            this.saleEntryToolStripMenuItem.Text = "Sale Entry";
-            this.saleEntryToolStripMenuItem.Click += new System.EventHandler(this.saleEntryToolStripMenuItem_Click);
-            // 
             // saleListToolStripMenuItem
             // 
             this.saleListToolStripMenuItem.Name = "saleListToolStripMenuItem";
-            this.saleListToolStripMenuItem.Size = new System.Drawing.Size(192, 36);
+            this.saleListToolStripMenuItem.Size = new System.Drawing.Size(172, 36);
             this.saleListToolStripMenuItem.Text = "Sale List";
             this.saleListToolStripMenuItem.Click += new System.EventHandler(this.saleListToolStripMenuItem_Click);
             // 
@@ -357,13 +359,14 @@
             // btnToSystem
             // 
             this.btnToSystem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnToSystem.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnToSystem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnToSystem.BackgroundImage = global::BookStore_Application.Properties.Resources.zJywIf;
             this.btnToSystem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnToSystem.Font = new System.Drawing.Font("Palatino Linotype", 28.75F, System.Drawing.FontStyle.Bold);
-            this.btnToSystem.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btnToSystem.Location = new System.Drawing.Point(230, 169);
+            this.btnToSystem.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnToSystem.Location = new System.Drawing.Point(283, 156);
             this.btnToSystem.Name = "btnToSystem";
-            this.btnToSystem.Size = new System.Drawing.Size(390, 175);
+            this.btnToSystem.Size = new System.Drawing.Size(294, 148);
             this.btnToSystem.TabIndex = 2;
             this.btnToSystem.Text = "POS SYSTEM";
             this.btnToSystem.UseVisualStyleBackColor = false;
@@ -372,11 +375,11 @@
             // btnCloseMain
             // 
             this.btnCloseMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCloseMain.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCloseMain.BackColor = System.Drawing.Color.Maroon;
             this.btnCloseMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.btnCloseMain.Location = new System.Drawing.Point(0, 402);
+            this.btnCloseMain.Location = new System.Drawing.Point(0, 445);
             this.btnCloseMain.Name = "btnCloseMain";
-            this.btnCloseMain.Size = new System.Drawing.Size(117, 48);
+            this.btnCloseMain.Size = new System.Drawing.Size(117, 73);
             this.btnCloseMain.TabIndex = 3;
             this.btnCloseMain.Text = "Close";
             this.btnCloseMain.UseVisualStyleBackColor = false;
@@ -387,11 +390,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(729, 496);
+            this.BackgroundImage = global::BookStore_Application.Properties.Resources.Walpaper__1920_1080_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(732, 518);
             this.Controls.Add(this.btnToSystem);
             this.Controls.Add(this.btnCloseMain);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -439,7 +445,6 @@
         private System.Windows.Forms.ToolStripMenuItem bookingListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem purchaseEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem purchaseListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saleEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saleListToolStripMenuItem;
     }
 }
