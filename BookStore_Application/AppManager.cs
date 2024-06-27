@@ -21,5 +21,6 @@ namespace BookStore_Application
             return instance;
         }
         public Employee loginEmployee { get; set; }
+       
     }
 }

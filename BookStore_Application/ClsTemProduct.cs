@@ -25,7 +25,7 @@ namespace BookStore_Application
             SellingPrice = sellingPrice;
             Quantity = quantity;
             TotalPrice = totalPrice;
-            TotalDiscount = totalPrice;
+            TotalDiscount = totalDiscount;
         }
     }
 }

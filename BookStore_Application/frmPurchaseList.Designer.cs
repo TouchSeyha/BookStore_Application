@@ -36,7 +36,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPurchase)).BeginInit();
@@ -44,6 +43,8 @@
             // 
             // dgvPurchase
             // 
+            this.dgvPurchase.AllowUserToAddRows = false;
+            this.dgvPurchase.AllowUserToDeleteRows = false;
             this.dgvPurchase.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPurchase.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvPurchase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -55,7 +56,6 @@
             this.Column4,
             this.Column5,
             this.Column6,
-            this.Column7,
             this.Column10,
             this.Column11});
             this.dgvPurchase.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -63,9 +63,10 @@
             this.dgvPurchase.Location = new System.Drawing.Point(0, 0);
             this.dgvPurchase.Margin = new System.Windows.Forms.Padding(1);
             this.dgvPurchase.Name = "dgvPurchase";
+            this.dgvPurchase.ReadOnly = true;
             this.dgvPurchase.RowHeadersWidth = 123;
             this.dgvPurchase.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPurchase.Size = new System.Drawing.Size(1406, 760);
+            this.dgvPurchase.Size = new System.Drawing.Size(1495, 618);
             this.dgvPurchase.TabIndex = 4;
             this.dgvPurchase.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvPurchase_MouseDoubleClick);
             // 
@@ -74,67 +75,71 @@
             this.Column1.HeaderText = "Purchase ID";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Employee Name";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Supplier Name";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column12
             // 
             this.Column12.HeaderText = "Total Amount";
             this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Amount Paid";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Amount Remian";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Discount";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Note";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
+            this.Column6.ReadOnly = true;
             // 
             // Column10
             // 
             this.Column10.HeaderText = "Created";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "Updated";
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // frmPurchaseList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1406, 760);
+            this.ClientSize = new System.Drawing.Size(1495, 618);
             this.Controls.Add(this.dgvPurchase);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPurchaseList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPurchaseList";
@@ -155,7 +160,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
     }

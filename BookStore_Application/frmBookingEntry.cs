@@ -24,7 +24,7 @@ namespace BookStore_Application
 
         private void frmBookingEntry_Load(object sender, EventArgs e)
         {
-            Clear();
+            MainClear();
         }
 
         private void Clear()
@@ -36,7 +36,6 @@ namespace BookStore_Application
             txtSellingprice.Text = "";
             txtQuantity.Text = "";
             txtTotalPrice.Text = "";
-            txtDiscount.Text = "";
             lblStock.Text = "";
 
             foreach (Customer c in db.Customers)
@@ -59,7 +58,6 @@ namespace BookStore_Application
             tempProductList.Clear();
 
             txtboxFinalTotalPrice.Text = "0";
-            txtboxAmountRemain.Text = "0";
         }
 
         private int GetLatestInvoiceId()
@@ -79,18 +77,16 @@ namespace BookStore_Application
                             .FirstOrDefault();
             if (book != null)
             {
-                /*txtBookId.Text = book.BookId.ToString();
-                txtTitle.Text = book.Title.ToString();
+                /*txtTitle.Text = book.Book.Title.ToString();
                 txtAuthorId.Text = book.BookId.ToString();
                 txtPublishId.Text = book.PublishingHouseId.ToString();
                 txtGenreId.Text = book.GenreId.ToString();
                 txtTotalPage.Text = book.TotalPage.ToString();
                 txtCostPrice.Text = book.CostPrice.ToString();
-                txtSellingPrice.Text = book.SellingPrice.ToString();
-                txtNote.Text = book.Note.ToString();*/
+                txtSellingPrice.Text = book.SellingPrice.ToString();*/
             }
         }
-
+        // Load to txt box
         public void LoadDataToForm(int bookingId)
         {
             var booking = db.Books
@@ -98,7 +94,7 @@ namespace BookStore_Application
                             .FirstOrDefault();
             if (booking != null)
             {
-                txtBookTitle.Text = booking.Title;
+                txtBookTitle.Text = booking.Title.ToString();
                 txtSellingprice.Text = booking.SellingPrice.ToString();
                 txtQuantity.Text = "1";
 
@@ -118,7 +114,7 @@ namespace BookStore_Application
         {
             if (!string.IsNullOrEmpty(txtSellingprice.Text) && !string.IsNullOrEmpty(txtQuantity.Text))
             {
-                decimal sellingPrice = int.Parse(txtSellingprice.Text);
+                decimal sellingPrice = decimal.Parse(txtSellingprice.Text);
                 int quantity = int.Parse(txtQuantity.Text);
 
                 decimal totalPrice = sellingPrice * quantity;
@@ -141,8 +137,7 @@ namespace BookStore_Application
                     product.Name,
                     product.SellingPrice,
                     product.Quantity,
-                    product.TotalPrice,
-                    product.TotalDiscount);
+                    product.TotalPrice);
                 rowCount++;
             }
         }
@@ -160,10 +155,10 @@ namespace BookStore_Application
                 !string.IsNullOrEmpty(txtQuantity.Text))
             {
                 string productName = txtBookTitle.Text;
-                decimal sellingPrice = int.Parse(txtSellingprice.Text);
+                decimal sellingPrice = decimal.Parse(txtSellingprice.Text);
                 int quantity = int.Parse(txtQuantity.Text);
                 decimal totalPrice = sellingPrice * quantity;
-                decimal totalDiscount = (totalPrice / 10) * 100;
+                decimal totalDiscount = totalPrice; // Fix later for discount
 
                 ClsTempProduct product = new ClsTempProduct(productName, sellingPrice, quantity, totalPrice, totalDiscount);
                 tempProductList.Add(product);
@@ -245,7 +240,7 @@ namespace BookStore_Application
 
         private void btnShowBookId_Click(object sender, EventArgs e)
         {
-            frmBookList bookList = new frmBookList();
+            BookFormForBooking bookList = new BookFormForBooking();
 
             bookList.bookingEntry = this;
             bookList.ShowDialog();
@@ -269,36 +264,36 @@ namespace BookStore_Application
                 return;
             }
 
-            Sale sale = new Sale();
-            sale.SaleId = GetLatestInvoiceId() + 1;
+            Booking sale = new Booking();
+
+            sale.BookingId = GetLatestInvoiceId() + 1;
             sale.Employee = db.Employees
                                 .Where(emp => emp.EmployeeName == employeeName)
                                 .FirstOrDefault();
             sale.Customer = db.Customers
                                 .Where(cus => cus.CustomerName == customerName)
                                 .FirstOrDefault();
-            // sale.TotalAmount = GetTotalAmount();
-            sale.AmountRemain = decimal.Parse(txtAmountRemain.Text);
+            sale.TotalAmount = GetTotalAmount();
+            sale.FinalAmount = 0;
             sale.Created = DateTime.Now;
             sale.Updated = DateTime.Now;
 
-            db.Sales.Add(sale);
+            db.Bookings.Add(sale);
             db.SaveChanges();
 
-            //Save to BookingDetail
+            //Save to BookingDetail Booking
 
             foreach (ClsTempProduct product in tempProductList)
             {
-                SaleDetail sd = new SaleDetail();
-                sd.Sale = sale;
+                BookingDetail sd = new BookingDetail();
+
+                sd.Booking = sale;
                 sd.Book = db.Books
                                 .Where(p => p.Title == product.Name)
                                 .FirstOrDefault();
                 sd.Quantity = product.Quantity;
+                sd.SellingPrice = product.SellingPrice;
                 sd.TotalPrice = product.TotalPrice;
-                sd.DiscountPercentage = product.TotalPrice / 100; // discount error
-                sd.Discount = product.TotalPrice / 100;
-
                 sd.Created = DateTime.Now;
                 sd.Updated = DateTime.Now;
 
@@ -308,12 +303,12 @@ namespace BookStore_Application
                                 .Where(s => s.BookId == productId)
                                 .FirstOrDefault();
 
-                if (stock != null)
+                /*if (stock != null)
                 {
                     stock.Quantity -= product.Quantity;
-                }
+                }*/
 
-                db.SaleDetails.Add(sd);
+                db.BookingDetails.Add(sd);
                 db.SaveChanges();
             }
             MainClear();
@@ -361,11 +356,11 @@ namespace BookStore_Application
 
         }
 
-        public void LoadDataFromInvoice(int invoiceId)
+        public void LoadDataFromInvoice(int invoiceId) // load to gridview
         {
             MainClear();
-            Sale sale = db.Sales
-                                .Where(s => s.SaleId == invoiceId).FirstOrDefault();
+            Booking sale = db.Bookings
+                                .Where(s => s.BookingId == invoiceId).FirstOrDefault();
             if (sale != null)
             {
                 txtInvoice.Text = invoiceId.ToString();
@@ -374,16 +369,17 @@ namespace BookStore_Application
 
                 // add data to gridview
 
-                var saleDetails = db.SaleDetails
-                                .Where(sd => sd.SaleId == invoiceId);
-                foreach (SaleDetail saleDetail in saleDetails)
+                var saleDetails = db.BookingDetails
+                                .Where(sd => sd.BookingId == invoiceId);
+                foreach (BookingDetail saleDetail in saleDetails)
                 {
                     ClsTempProduct tempProduct = new ClsTempProduct();
+
                     tempProduct.Name = saleDetail.Book.Title;
                     tempProduct.Quantity = saleDetail.Quantity;
                     tempProduct.SellingPrice = saleDetail.Book.SellingPrice;
                     tempProduct.TotalPrice = saleDetail.TotalPrice;
-                    tempProduct.TotalDiscount = saleDetail.Discount; // Discount Possible Error
+
                     tempProductList.Add(tempProduct);
                 }
 

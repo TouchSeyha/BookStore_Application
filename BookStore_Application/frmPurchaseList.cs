@@ -46,7 +46,7 @@ namespace BookStore_Application
                     string value = dgvPurchase.SelectedRows[0].Cells[0].Value.ToString();
                     int PurchaseId = int.Parse(value);
 
-                    //PurchaseEntry.LoadDataFromPurchaseId(PurchaseId);
+                    PurchaseEntry.LoadDataFromInvoice(PurchaseId);
                     Close();
                 }
             }

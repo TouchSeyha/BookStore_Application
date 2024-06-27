@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.btnGetData = new System.Windows.Forms.Button();
-            this.txtAmountRemain = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtboxAmountRemain = new System.Windows.Forms.TextBox();
             this.txtboxFinalTotalPrice = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -39,8 +37,6 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.dgvBooking = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtDiscount = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblStock = new System.Windows.Forms.Label();
             this.btnShowBookId = new System.Windows.Forms.Button();
             this.txtTotalPrice = new System.Windows.Forms.TextBox();
@@ -67,9 +63,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooking)).BeginInit();
@@ -92,42 +85,20 @@
             this.btnGetData.UseVisualStyleBackColor = false;
             this.btnGetData.Click += new System.EventHandler(this.btnGetData_Click);
             // 
-            // txtAmountRemain
-            // 
-            this.txtAmountRemain.BackColor = System.Drawing.Color.Transparent;
-            this.txtAmountRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.txtAmountRemain.Location = new System.Drawing.Point(40, 131);
-            this.txtAmountRemain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.txtAmountRemain.Name = "txtAmountRemain";
-            this.txtAmountRemain.Size = new System.Drawing.Size(178, 32);
-            this.txtAmountRemain.TabIndex = 88;
-            this.txtAmountRemain.Text = "Amount Remain";
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 48);
+            this.label1.Location = new System.Drawing.Point(93, 99);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 26);
             this.label1.TabIndex = 86;
             this.label1.Text = "Final Total Price";
             // 
-            // txtboxAmountRemain
-            // 
-            this.txtboxAmountRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxAmountRemain.Location = new System.Drawing.Point(45, 158);
-            this.txtboxAmountRemain.Margin = new System.Windows.Forms.Padding(2);
-            this.txtboxAmountRemain.Name = "txtboxAmountRemain";
-            this.txtboxAmountRemain.ReadOnly = true;
-            this.txtboxAmountRemain.Size = new System.Drawing.Size(271, 32);
-            this.txtboxAmountRemain.TabIndex = 85;
-            this.txtboxAmountRemain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // txtboxFinalTotalPrice
             // 
             this.txtboxFinalTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxFinalTotalPrice.Location = new System.Drawing.Point(45, 76);
+            this.txtboxFinalTotalPrice.Location = new System.Drawing.Point(44, 127);
             this.txtboxFinalTotalPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxFinalTotalPrice.Name = "txtboxFinalTotalPrice";
             this.txtboxFinalTotalPrice.ReadOnly = true;
@@ -141,9 +112,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.DarkGray;
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.txtboxAmountRemain);
             this.panel3.Controls.Add(this.txtboxFinalTotalPrice);
-            this.panel3.Controls.Add(this.txtAmountRemain);
             this.panel3.Location = new System.Drawing.Point(700, 93);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
@@ -206,10 +175,7 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
+            this.Column5});
             this.dgvBooking.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvBooking.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvBooking.Location = new System.Drawing.Point(0, 385);
@@ -226,8 +192,6 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.txtDiscount);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblStock);
             this.panel2.Controls.Add(this.btnShowBookId);
             this.panel2.Controls.Add(this.txtTotalPrice);
@@ -247,41 +211,15 @@
             this.panel2.Size = new System.Drawing.Size(696, 289);
             this.panel2.TabIndex = 82;
             // 
-            // txtDiscount
-            // 
-            this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscount.Location = new System.Drawing.Point(196, 212);
-            this.txtDiscount.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.Size = new System.Drawing.Size(250, 32);
-            this.txtDiscount.TabIndex = 94;
-            this.txtDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label2.Location = new System.Drawing.Point(9, 214);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 29);
-            this.label2.TabIndex = 93;
-            this.label2.Text = "Total Discount :";
-            // 
             // lblStock
             // 
             this.lblStock.AutoSize = true;
             this.lblStock.BackColor = System.Drawing.Color.Transparent;
-            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.lblStock.Location = new System.Drawing.Point(451, 76);
+            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.8F);
+            this.lblStock.Location = new System.Drawing.Point(449, 103);
             this.lblStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(67, 26);
+            this.lblStock.Size = new System.Drawing.Size(73, 29);
             this.lblStock.TabIndex = 92;
             this.lblStock.Text = "Stock";
             this.lblStock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,7 +227,7 @@
             // btnShowBookId
             // 
             this.btnShowBookId.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowBookId.Location = new System.Drawing.Point(462, 42);
+            this.btnShowBookId.Location = new System.Drawing.Point(461, 68);
             this.btnShowBookId.Name = "btnShowBookId";
             this.btnShowBookId.Size = new System.Drawing.Size(43, 31);
             this.btnShowBookId.TabIndex = 91;
@@ -301,7 +239,7 @@
             // txtTotalPrice
             // 
             this.txtTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalPrice.Location = new System.Drawing.Point(196, 168);
+            this.txtTotalPrice.Location = new System.Drawing.Point(195, 194);
             this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.Size = new System.Drawing.Size(250, 32);
@@ -311,7 +249,7 @@
             // txtQuantity
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantity.Location = new System.Drawing.Point(196, 127);
+            this.txtQuantity.Location = new System.Drawing.Point(195, 153);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(250, 32);
@@ -322,7 +260,7 @@
             // txtSellingprice
             // 
             this.txtSellingprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSellingprice.Location = new System.Drawing.Point(196, 81);
+            this.txtSellingprice.Location = new System.Drawing.Point(195, 107);
             this.txtSellingprice.Margin = new System.Windows.Forms.Padding(2);
             this.txtSellingprice.Name = "txtSellingprice";
             this.txtSellingprice.Size = new System.Drawing.Size(250, 32);
@@ -332,7 +270,7 @@
             // txtBookTitle
             // 
             this.txtBookTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookTitle.Location = new System.Drawing.Point(196, 40);
+            this.txtBookTitle.Location = new System.Drawing.Point(195, 66);
             this.txtBookTitle.Margin = new System.Windows.Forms.Padding(2);
             this.txtBookTitle.Name = "txtBookTitle";
             this.txtBookTitle.ReadOnly = true;
@@ -364,7 +302,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label5.Location = new System.Drawing.Point(55, 42);
+            this.label5.Location = new System.Drawing.Point(54, 68);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(147, 29);
@@ -381,7 +319,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label8.Location = new System.Drawing.Point(48, 169);
+            this.label8.Location = new System.Drawing.Point(47, 195);
             this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(155, 29);
@@ -412,7 +350,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label7.Location = new System.Drawing.Point(60, 83);
+            this.label7.Location = new System.Drawing.Point(59, 109);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(141, 29);
@@ -429,7 +367,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label6.Location = new System.Drawing.Point(74, 129);
+            this.label6.Location = new System.Drawing.Point(73, 155);
             this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 29);
@@ -578,50 +516,31 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Employee";
+            this.Column2.HeaderText = "Book Title";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Customer";
+            this.Column3.HeaderText = "Selling Price";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Total Amount";
+            this.Column4.HeaderText = "Quantity";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Total Discount";
+            this.Column5.HeaderText = "Total Price";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Final Amount";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Amount Remain";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Note";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
             // 
             // frmBookingEntry
             // 
@@ -674,13 +593,9 @@
         private System.Windows.Forms.TextBox txtSellingprice;
         private System.Windows.Forms.Button btnShowBookId;
         private System.Windows.Forms.Label lblStock;
-        private System.Windows.Forms.Label txtAmountRemain;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtboxAmountRemain;
         private System.Windows.Forms.TextBox txtboxFinalTotalPrice;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtDiscount;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnClearNew;
         private System.Windows.Forms.Button btnSave;
@@ -690,8 +605,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }

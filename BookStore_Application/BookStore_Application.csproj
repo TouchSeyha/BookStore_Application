@@ -58,6 +58,19 @@
     <Compile Include="Author.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BookFormForBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookFormForBooking.Designer.cs">
+      <DependentUpon>BookFormForBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookListData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookListData.Designer.cs">
+      <DependentUpon>BookListData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClsTempPurchase.cs" />
     <Compile Include="ClsTemProduct.cs" />
     <Compile Include="frmAuthorList.cs">
       <SubType>Form</SubType>
@@ -304,6 +317,12 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BookFormForBooking.resx">
+      <DependentUpon>BookFormForBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookListData.resx">
+      <DependentUpon>BookListData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAuthorEntry.resx">
       <DependentUpon>frmAuthorEntry.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBookEntry.resx">
       <DependentUpon>frmBookEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookingDetail.resx">
+      <DependentUpon>frmBookingDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBookingEntry.resx">
       <DependentUpon>frmBookingEntry.cs</DependentUpon>
@@ -348,6 +370,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPurchaseList.resx">
       <DependentUpon>frmPurchaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaleDetail.resx">
+      <DependentUpon>frmSaleDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSaleEntry.resx">
       <DependentUpon>frmSaleEntry.cs</DependentUpon>

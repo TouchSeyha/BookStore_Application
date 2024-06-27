@@ -21,6 +21,8 @@ namespace BookStore_Application
 
         public frmSupplierEntry SupplierEntry = null;
 
+        public frmPurchaseEntry purchaseEntry = null;
+
         private void frmSupplierList_Load(object sender, EventArgs e)
         {
             foreach (Supplier c in db.Suppliers)

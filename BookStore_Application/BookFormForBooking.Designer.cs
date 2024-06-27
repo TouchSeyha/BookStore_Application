@@ -1,6 +1,6 @@
 ﻿namespace BookStore_Application
 {
-    partial class frmSaleDetail
+    partial class BookFormForBooking
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvSale = new System.Windows.Forms.DataGridView();
+            this.dgvBook = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,21 +40,20 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvSale
+            // dgvBook
             // 
-            this.dgvSale.AllowUserToAddRows = false;
-            this.dgvSale.AllowUserToDeleteRows = false;
-            this.dgvSale.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSale.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSale.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvBook.AllowUserToAddRows = false;
+            this.dgvBook.AllowUserToDeleteRows = false;
+            this.dgvBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBook.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column12,
             this.Column4,
             this.Column5,
             this.Column6,
@@ -64,75 +62,69 @@
             this.Column9,
             this.Column10,
             this.Column11});
-            this.dgvSale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSale.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvSale.Location = new System.Drawing.Point(0, 0);
-            this.dgvSale.Margin = new System.Windows.Forms.Padding(1);
-            this.dgvSale.Name = "dgvSale";
-            this.dgvSale.ReadOnly = true;
-            this.dgvSale.RowHeadersWidth = 123;
-            this.dgvSale.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSale.Size = new System.Drawing.Size(1503, 956);
-            this.dgvSale.TabIndex = 4;
-            this.dgvSale.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvBooking_MouseDoubleClick);
+            this.dgvBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBook.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvBook.Location = new System.Drawing.Point(0, 0);
+            this.dgvBook.Margin = new System.Windows.Forms.Padding(1);
+            this.dgvBook.Name = "dgvBook";
+            this.dgvBook.ReadOnly = true;
+            this.dgvBook.RowHeadersWidth = 123;
+            this.dgvBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvBook.Size = new System.Drawing.Size(1963, 1054);
+            this.dgvBook.TabIndex = 4;
+            this.dgvBook.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvBook_MouseDoubleClick);
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "SaleDetail ID";
+            this.Column1.HeaderText = "Book ID";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Sale ID";
+            this.Column2.HeaderText = "Title";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Book";
+            this.Column3.HeaderText = "Author ID";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Title";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            // 
             // Column4
             // 
-            this.Column4.HeaderText = "Quantity";
+            this.Column4.HeaderText = "Publishing HouseID";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Selling Price";
+            this.Column5.HeaderText = "Genre ID";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Total Price";
+            this.Column6.HeaderText = "Total Page";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "Discount Percentage";
+            this.Column7.HeaderText = "Cost Price";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "Discount";
+            this.Column8.HeaderText = "Selling Price";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
             // Column9
             // 
-            this.Column9.HeaderText = "Final Price";
+            this.Column9.HeaderText = "Note";
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             // 
@@ -148,29 +140,26 @@
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
             // 
-            // frmSaleDetail
+            // BookFormForBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1503, 956);
-            this.Controls.Add(this.dgvSale);
-            this.Name = "frmSaleDetail";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSaleDetail";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmSaleDetail_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
+            this.ClientSize = new System.Drawing.Size(1963, 1054);
+            this.Controls.Add(this.dgvBook);
+            this.Name = "BookFormForBooking";
+            this.Text = "BookFormForBooking";
+            this.Load += new System.EventHandler(this.BookFormForBooking_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvSale;
+        private System.Windows.Forms.DataGridView dgvBook;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;

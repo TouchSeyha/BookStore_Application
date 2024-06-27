@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvSale = new System.Windows.Forms.DataGridView();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,13 +52,15 @@
             this.dgvSale.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSale.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column11,
             this.Column1,
             this.Column2,
+            this.Column12,
             this.Column3,
             this.Column4,
+            this.Column5,
             this.Column7,
             this.Column8,
-            this.Column5,
             this.Column9,
             this.Column6,
             this.Column10});
@@ -70,6 +74,13 @@
             this.dgvSale.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSale.Size = new System.Drawing.Size(2218, 1091);
             this.dgvSale.TabIndex = 102;
+            this.dgvSale.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvSale_MouseDoubleClick);
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Purchase Detail ID";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // Column1
             // 
@@ -79,43 +90,49 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Employee Name";
+            this.Column2.HeaderText = "Book ID";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Title";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
             // Column3
             // 
-            this.Column3.HeaderText = "Supplier Name";
+            this.Column3.HeaderText = "Quantity";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Total Amount";
+            this.Column4.HeaderText = "Purchase Price";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Total Price";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
             // Column7
             // 
-            this.Column7.HeaderText = "Amount Paid";
+            this.Column7.HeaderText = "Discount Percentage";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "Amount Remain";
+            this.Column8.HeaderText = "Discount";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Total Discount";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
             // Column9
             // 
-            this.Column9.HeaderText = "Note";
+            this.Column9.HeaderText = "Final Price";
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             // 
@@ -139,6 +156,7 @@
             this.Controls.Add(this.dgvSale);
             this.Name = "frmPurchaseDetail";
             this.Text = "frmPurchaseDetail";
+            this.Load += new System.EventHandler(this.frmPurchaseDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
             this.ResumeLayout(false);
 
@@ -147,15 +165,17 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvSale;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
     }
 }

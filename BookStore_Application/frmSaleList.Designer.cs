@@ -67,7 +67,7 @@
             this.dgvSale.Name = "dgvSale";
             this.dgvSale.RowHeadersWidth = 123;
             this.dgvSale.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSale.Size = new System.Drawing.Size(1134, 759);
+            this.dgvSale.Size = new System.Drawing.Size(1575, 759);
             this.dgvSale.TabIndex = 3;
             this.dgvSale.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvSale_MouseDoubleClick);
             // 
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 759);
+            this.ClientSize = new System.Drawing.Size(1575, 759);
             this.Controls.Add(this.dgvSale);
             this.Name = "frmSaleList";
             this.Text = "frmSaleList";

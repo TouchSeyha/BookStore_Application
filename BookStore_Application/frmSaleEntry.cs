@@ -23,7 +23,7 @@ namespace BookStore_Application
 
         private void frmSaleEntry_Load(object sender, EventArgs e)
         {
-            Clear();
+            MainClear();
         }
 
         private void Clear()

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,6 +24,10 @@ namespace BookStore_Application
 
         public frmSaleEntry saleEntry = null;
 
+        public frmBookEntry bookEntry = null;
+
+        public frmPurchaseEntry purchaseEntry = null;
+
         private void frmBookingList_Load(object sender, EventArgs e)
         {
             foreach (Booking c in db.Bookings)
@@ -31,11 +36,6 @@ namespace BookStore_Application
                                         c.Employee.EmployeeName,
                                         c.Customer.CustomerName,
                                         c.TotalAmount,
-                                        c.TotalDiscount,
-                                        c.FinalAmount,
-                                        c.AmountPaid,
-                                        c.AmountRemain,
-                                        c.Note,
                                         c.Created,
                                         c.Updated);
             }
