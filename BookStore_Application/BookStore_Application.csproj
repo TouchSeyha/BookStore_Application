@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="ClsTempPurchase.cs" />
     <Compile Include="ClsTemProduct.cs" />
+    <Compile Include="ClsTempSale.cs" />
     <Compile Include="frmAuthorList.cs">
       <SubType>Form</SubType>
     </Compile>
