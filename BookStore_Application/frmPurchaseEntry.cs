@@ -19,7 +19,7 @@ namespace BookStore_Application
 
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
-        private List<ClsTempSale> tempProductList = new List<ClsTempSale>();
+        private List<ClsTempPurchase> tempProductList = new List<ClsTempPurchase>();
 
         private void frmPurchaseEntry_Load(object sender, EventArgs e)
         {
@@ -113,7 +113,7 @@ namespace BookStore_Application
         {
             dgvSale.Rows.Clear();
             int rowCount = 1;
-            foreach (ClsTempSale product in tempProductList)
+            foreach (ClsTempPurchase product in tempProductList)
             {
                 dgvSale.Rows.Add(rowCount,
                     product.Name,

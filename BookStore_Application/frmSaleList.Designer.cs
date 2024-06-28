@@ -37,7 +37,6 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
@@ -57,7 +56,6 @@
             this.Column6,
             this.Column7,
             this.Column8,
-            this.Column9,
             this.Column10,
             this.Column11});
             this.dgvSale.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -93,7 +91,7 @@
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Total Discount";
+            this.Column5.HeaderText = "Discount Percentage";
             this.Column5.Name = "Column5";
             // 
             // Column6
@@ -110,11 +108,6 @@
             // 
             this.Column8.HeaderText = "Amount Remain";
             this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Note";
-            this.Column9.Name = "Column9";
             // 
             // Column10
             // 
@@ -152,7 +145,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
     }

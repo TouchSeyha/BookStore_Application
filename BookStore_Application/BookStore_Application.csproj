@@ -70,6 +70,12 @@
     <Compile Include="BookListData.Designer.cs">
       <DependentUpon>BookListData.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookListDataforSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookListDataforSale.Designer.cs">
+      <DependentUpon>BookListDataforSale.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClsTempPurchase.cs" />
     <Compile Include="ClsTemProduct.cs" />
     <Compile Include="ClsTempSale.cs" />
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookListData.resx">
       <DependentUpon>BookListData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookListDataforSale.resx">
+      <DependentUpon>BookListDataforSale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAuthorEntry.resx">
       <DependentUpon>frmAuthorEntry.cs</DependentUpon>

@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace BookStore_Application
 {
-    public partial class BookFormForBooking : Form
+    public partial class BookListDataforSale : Form
     {
-        public BookFormForBooking()
+        public BookListDataforSale()
         {
             InitializeComponent();
         }
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
-        public frmBookingEntry bookingEntry = null;
-
-        private void BookFormForBooking_Load(object sender, EventArgs e)
+        public frmBookSystembtn bookSystembtn = null;
+        private void BookListDataforSale_Load(object sender, EventArgs e)
         {
             foreach (Book c in db.Books)
             {
@@ -41,7 +40,7 @@ namespace BookStore_Application
 
         private void dgvBook_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (bookingEntry != null)
+            if (bookSystembtn != null)
             {
                 if (dgvBook.SelectedRows.Count > 0)
                 {
@@ -49,7 +48,7 @@ namespace BookStore_Application
                     int BookId = int.Parse(value);
 
                     //bookEntry.LoadDataFromBookId(BookId);
-                    bookingEntry.LoadDataToForm(BookId);
+                    bookSystembtn.LoadDataToForm(BookId);
                     Close();
                 }
             }

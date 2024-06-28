@@ -1,6 +1,6 @@
 ﻿namespace BookStore_Application
 {
-    partial class BookFormForBooking
+    partial class BookListDataforSale
     {
         /// <summary>
         /// Required designer variable.
@@ -72,7 +72,7 @@
             this.dgvBook.RowHeadersWidth = 123;
             this.dgvBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBook.Size = new System.Drawing.Size(1784, 1054);
-            this.dgvBook.TabIndex = 4;
+            this.dgvBook.TabIndex = 5;
             this.dgvBook.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvBook_MouseDoubleClick);
             // 
             // Column1
@@ -141,15 +141,15 @@
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
             // 
-            // BookFormForBooking
+            // BookListDataforSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1784, 1054);
             this.Controls.Add(this.dgvBook);
-            this.Name = "BookFormForBooking";
-            this.Text = "BookFormForBooking";
-            this.Load += new System.EventHandler(this.BookFormForBooking_Load);
+            this.Name = "BookListDataforSale";
+            this.Text = "BookListDataforSale";
+            this.Load += new System.EventHandler(this.BookListDataforSale_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).EndInit();
             this.ResumeLayout(false);
 

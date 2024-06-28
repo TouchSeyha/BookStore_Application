@@ -19,7 +19,7 @@ namespace BookStore_Application
 
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
-        public frmBookingEntry bookingEntry = null;
+        public frmBookSystembtn saleEntry = null;
 
         private void frmSaleList_Load(object sender, EventArgs e)
         {
@@ -36,7 +36,6 @@ namespace BookStore_Application
                                         c.FinalAmount,
                                         c.AmountPaid,
                                         c.AmountRemain,
-                                        c.Note,
                                         c.Created,
                                         c.Updated);
             }
@@ -44,14 +43,14 @@ namespace BookStore_Application
 
         private void dgvSale_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (bookingEntry != null)
+            if (saleEntry != null)
             {
                 if (dgvSale.SelectedRows.Count > 0)
                 {
                     string value = dgvSale.SelectedRows[0].Cells[0].Value.ToString();
                     int BookingId = int.Parse(value);
 
-                    bookingEntry.LoadDataFromInvoice(BookingId);
+                    saleEntry.LoadDataFromInvoice(BookingId);
                     Close();
                 }
             }
