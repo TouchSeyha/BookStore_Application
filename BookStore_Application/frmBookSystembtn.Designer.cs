@@ -32,9 +32,7 @@
             this.btnClearNew = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnGetData = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.txtDiscount = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblStock = new System.Windows.Forms.Label();
@@ -74,8 +72,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -114,7 +110,7 @@
             this.btnClearNew.BackColor = System.Drawing.Color.LightCoral;
             this.btnClearNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearNew.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnClearNew.Location = new System.Drawing.Point(11, 26);
+            this.btnClearNew.Location = new System.Drawing.Point(1159, 119);
             this.btnClearNew.Margin = new System.Windows.Forms.Padding(1);
             this.btnClearNew.Name = "btnClearNew";
             this.btnClearNew.Size = new System.Drawing.Size(274, 55);
@@ -129,7 +125,7 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.Location = new System.Drawing.Point(11, 100);
+            this.btnSave.Location = new System.Drawing.Point(1159, 193);
             this.btnSave.Margin = new System.Windows.Forms.Padding(1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(274, 55);
@@ -144,7 +140,7 @@
             this.btnGetData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetData.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGetData.Location = new System.Drawing.Point(11, 248);
+            this.btnGetData.Location = new System.Drawing.Point(1159, 341);
             this.btnGetData.Margin = new System.Windows.Forms.Padding(1);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(274, 55);
@@ -153,28 +149,13 @@
             this.btnGetData.UseVisualStyleBackColor = false;
             this.btnGetData.Click += new System.EventHandler(this.btnGetData_Click);
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.btnClearNew);
-            this.panel4.Controls.Add(this.btnSave);
-            this.panel4.Controls.Add(this.btnGetData);
-            this.panel4.Location = new System.Drawing.Point(1148, 93);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(295, 332);
-            this.panel4.TabIndex = 105;
-            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(11, 174);
+            this.button1.Location = new System.Drawing.Point(1159, 267);
             this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(274, 55);
@@ -183,38 +164,10 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Controls.Add(this.txtDiscount);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.lblStock);
-            this.panel2.Controls.Add(this.btnShowBookId);
-            this.panel2.Controls.Add(this.txtTotalPrice);
-            this.panel2.Controls.Add(this.txtQuantity);
-            this.panel2.Controls.Add(this.txtSellingprice);
-            this.panel2.Controls.Add(this.txtBookTitle);
-            this.panel2.Controls.Add(this.btnNew);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.btnDelete);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(0, 93);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(760, 332);
-            this.panel2.TabIndex = 103;
-            // 
             // txtDiscount
             // 
             this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscount.Location = new System.Drawing.Point(189, 232);
+            this.txtDiscount.Location = new System.Drawing.Point(190, 313);
             this.txtDiscount.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(325, 32);
@@ -230,7 +183,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 231);
+            this.label2.Location = new System.Drawing.Point(29, 312);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 29);
@@ -242,7 +195,8 @@
             this.lblStock.AutoSize = true;
             this.lblStock.BackColor = System.Drawing.Color.Transparent;
             this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStock.Location = new System.Drawing.Point(518, 96);
+            this.lblStock.ForeColor = System.Drawing.Color.White;
+            this.lblStock.Location = new System.Drawing.Point(519, 177);
             this.lblStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStock.Name = "lblStock";
             this.lblStock.Size = new System.Drawing.Size(78, 29);
@@ -256,7 +210,7 @@
             this.btnShowBookId.AutoSize = true;
             this.btnShowBookId.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnShowBookId.ForeColor = System.Drawing.Color.Black;
-            this.btnShowBookId.Location = new System.Drawing.Point(523, 57);
+            this.btnShowBookId.Location = new System.Drawing.Point(524, 138);
             this.btnShowBookId.Name = "btnShowBookId";
             this.btnShowBookId.Size = new System.Drawing.Size(42, 36);
             this.btnShowBookId.TabIndex = 91;
@@ -268,7 +222,7 @@
             // txtTotalPrice
             // 
             this.txtTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalPrice.Location = new System.Drawing.Point(189, 188);
+            this.txtTotalPrice.Location = new System.Drawing.Point(190, 269);
             this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.Size = new System.Drawing.Size(325, 32);
@@ -278,7 +232,7 @@
             // txtQuantity
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantity.Location = new System.Drawing.Point(189, 147);
+            this.txtQuantity.Location = new System.Drawing.Point(190, 228);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(325, 32);
@@ -289,7 +243,7 @@
             // txtSellingprice
             // 
             this.txtSellingprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSellingprice.Location = new System.Drawing.Point(189, 101);
+            this.txtSellingprice.Location = new System.Drawing.Point(190, 182);
             this.txtSellingprice.Margin = new System.Windows.Forms.Padding(2);
             this.txtSellingprice.Name = "txtSellingprice";
             this.txtSellingprice.Size = new System.Drawing.Size(325, 32);
@@ -300,7 +254,7 @@
             // 
             this.txtBookTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBookTitle.ForeColor = System.Drawing.Color.Chartreuse;
-            this.txtBookTitle.Location = new System.Drawing.Point(189, 60);
+            this.txtBookTitle.Location = new System.Drawing.Point(190, 141);
             this.txtBookTitle.Margin = new System.Windows.Forms.Padding(2);
             this.txtBookTitle.Name = "txtBookTitle";
             this.txtBookTitle.ReadOnly = true;
@@ -314,7 +268,7 @@
             this.btnNew.BackColor = System.Drawing.Color.SandyBrown;
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnNew.Location = new System.Drawing.Point(599, 206);
+            this.btnNew.Location = new System.Drawing.Point(600, 287);
             this.btnNew.Margin = new System.Windows.Forms.Padding(1);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(146, 56);
@@ -332,7 +286,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(39, 60);
+            this.label5.Location = new System.Drawing.Point(40, 141);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(147, 29);
@@ -349,7 +303,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(31, 187);
+            this.label8.Location = new System.Drawing.Point(32, 268);
             this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(155, 29);
@@ -362,7 +316,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.LightCoral;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDelete.Location = new System.Drawing.Point(599, 127);
+            this.btnDelete.Location = new System.Drawing.Point(600, 208);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(1);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(146, 56);
@@ -380,7 +334,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(64, 147);
+            this.label6.Location = new System.Drawing.Point(65, 228);
             this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 29);
@@ -394,7 +348,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.LightGreen;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAdd.Location = new System.Drawing.Point(599, 57);
+            this.btnAdd.Location = new System.Drawing.Point(600, 138);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(1);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(146, 56);
@@ -412,7 +366,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(91, 102);
+            this.label7.Location = new System.Drawing.Point(92, 183);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 29);
@@ -423,8 +377,7 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel3.BackgroundImage = global::BookStore_Application.Properties.Resources.Black_Texture_Texture_Background_Wallpaper_Image_For_Free_Download___Pngtree;
+            this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.txtboxAmountRemain);
             this.panel3.Controls.Add(this.label4);
@@ -698,25 +651,42 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::BookStore_Application.Properties.Resources.Black_Texture_Texture_Background_Wallpaper_Image_For_Free_Download___Pngtree;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1443, 854);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.txtDiscount);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblStock);
+            this.Controls.Add(this.btnClearNew);
+            this.Controls.Add(this.btnShowBookId);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.txtTotalPrice);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtQuantity);
+            this.Controls.Add(this.txtSellingprice);
+            this.Controls.Add(this.btnGetData);
+            this.Controls.Add(this.txtBookTitle);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.dgvSale);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.label6);
             this.Name = "frmBookSystembtn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBookSystembtn";
             this.Load += new System.EventHandler(this.frmBookSystembtn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -724,7 +694,6 @@
 
         private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.TextBox txtInvoice;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.Button btnShowBookId;
@@ -757,7 +726,6 @@
         private System.Windows.Forms.Button btnClearNew;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnGetData;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
