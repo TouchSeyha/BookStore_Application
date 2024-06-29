@@ -218,12 +218,19 @@ namespace BookStore_Application
         {
             string customerName = cmbCustomer.Text;
             string employeeName = cmbEmployee.Text;
+            string amountPaid = txtboxAmountPaid.Text;
 
             if (string.IsNullOrEmpty(customerName) ||
                 string.IsNullOrEmpty(employeeName) ||
                 dgvBooking.Rows.Count <= 0)
             {
                 MessageBox.Show("Please Select Customer and Employee!");
+                return;
+            }
+
+            if(string.IsNullOrEmpty(amountPaid))
+            {
+                MessageBox.Show("Please Input Amount Paid!");
                 return;
             }
 

@@ -313,17 +313,36 @@
       <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
       <LastGenOutput>BookStoreDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-grocery-store-96.png" />
+    <None Include="Resources\icons8-billing-machine-961.png" />
+    <None Include="Resources\icons8-purchase-96.png" />
+    <None Include="Resources\icons8-purchase-48.png" />
+    <None Include="Resources\icons8-log-out-481.png" />
+    <None Include="Resources\icons8-close-601.png" />
+    <None Include="Resources\icons8-scroll-48.png" />
+    <None Include="Resources\icons8-hangar-481.png" />
+    <None Include="Resources\icons8-report-48.png" />
+    <None Include="Resources\icons8-folder-48.png" />
+    <None Include="Resources\icons8-hangar-48.png" />
+    <None Include="Resources\icons8-news-48.png" />
+    <None Include="Resources\icons8-comedy-48.png" />
+    <None Include="Resources\icons8-book-481.png" />
+    <None Include="Resources\icons8-author-48.png" />
+    <None Include="Resources\icons8-cash-register-48.png" />
+    <None Include="Resources\icons8-billing-machine-96.png" />
+    <None Include="Resources\icons8-book-48.png" />
+    <None Include="Resources\icons8-log-out-48.png" />
+    <None Include="Resources\icons8-log-out-32.png" />
+    <None Include="Resources\icons8-dashboard-48.png" />
+    <None Include="Resources\icons8-menu-48.png" />
+    <None Include="Resources\icons8-close-60.png" />
+    <None Include="Resources\icons8-close-30.png" />
+    <None Include="Resources\icons8-key-48.png" />
+    <None Include="Resources\icons8-male-user-48.png" />
+    <None Include="Resources\icons8-user-shield-52.png" />
     <None Include="packages.config" />
-    <None Include="Resources\Pure Color Pigment Inkjet Splash Cool Background, Color, Gradient, Pigment Background Image And Wallpaper for Free Download1.jpg" />
-    <None Include="Resources\56dc47d9-31b7-4313-b2ca-f96f5157c7261.jpg" />
-    <None Include="Resources\Miami WPLC02141.jpg" />
-    <None Include="Resources\Download premium vector of Colorful fluid gradient background vector by Kappy about composition, fluid gradients, liquid gradient, 3d, and abstract 5588791.jpg" />
     <None Include="Resources\Black Texture Texture Background Wallpaper Image For Free Download - Pngtree1.jpg" />
     <None Include="Resources\Black Texture Texture Background Wallpaper Image For Free Download - Pngtree.jpg" />
-    <None Include="Resources\56dc47d9-31b7-4313-b2ca-f96f5157c726.jpg" />
-    <None Include="Resources\Miami WPLC0214.jpg" />
-    <None Include="Resources\Pure Color Pigment Inkjet Splash Cool Background, Color, Gradient, Pigment Background Image And Wallpaper for Free Download.jpg" />
-    <None Include="Resources\Download premium vector of Colorful fluid gradient background vector by Kappy about composition, fluid gradients, liquid gradient, 3d, and abstract 558879.jpg" />
     <None Include="Resources\Lofi wallpaper.jpg" />
     <None Include="Resources\lofigirl-lofi-artwork-digital-art-2d-hd-wallpaper-preview.jpg" />
     <None Include="Resources\Walpaper [1920_1080].jpg" />

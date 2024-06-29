@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.authorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,50 +45,59 @@
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supplierEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supplierListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stockEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stockListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookingEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.purchaseEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.purchaseListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saleListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookingDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.purchaseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saleDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnToSystem = new System.Windows.Forms.Button();
+            this.allListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookingListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.purchaseListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookingDetailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.purchaseDetailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleDetailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnStock = new System.Windows.Forms.Button();
+            this.btnPurchase = new System.Windows.Forms.Button();
+            this.btnBooking = new System.Windows.Forms.Button();
+            this.btnPos = new System.Windows.Forms.Button();
             this.btnCloseMain = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.menuStrip1.AutoSize = false;
-            this.menuStrip1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.menuStrip1.BackgroundImage = global::BookStore_Application.Properties.Resources.zJywIf;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 16F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.authorToolStripMenuItem,
             this.bookToolStripMenuItem,
             this.genreToolStripMenuItem,
             this.publishingHouseToolStripMenuItem,
-            this.supplierToolStripMenuItem});
+            this.supplierToolStripMenuItem,
+            this.allListsToolStripMenuItem,
+            this.reportsToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(119, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(80, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(613, 68);
+            this.menuStrip1.Size = new System.Drawing.Size(1100, 85);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = global::BookStore_Application.Properties.Resources.icons8_menu_48;
+            this.pictureBox2.Location = new System.Drawing.Point(24, 26);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // authorToolStripMenuItem
             // 
@@ -96,21 +106,22 @@
             this.authorEntryToolStripMenuItem,
             this.authorListToolStripMenuItem});
             this.authorToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.authorToolStripMenuItem.Image = global::BookStore_Application.Properties.Resources.icons8_author_48;
             this.authorToolStripMenuItem.Name = "authorToolStripMenuItem";
-            this.authorToolStripMenuItem.Size = new System.Drawing.Size(99, 64);
+            this.authorToolStripMenuItem.Size = new System.Drawing.Size(107, 81);
             this.authorToolStripMenuItem.Text = "Author";
             // 
             // authorEntryToolStripMenuItem
             // 
             this.authorEntryToolStripMenuItem.Name = "authorEntryToolStripMenuItem";
-            this.authorEntryToolStripMenuItem.Size = new System.Drawing.Size(222, 36);
+            this.authorEntryToolStripMenuItem.Size = new System.Drawing.Size(207, 34);
             this.authorEntryToolStripMenuItem.Text = "Author Entry";
             this.authorEntryToolStripMenuItem.Click += new System.EventHandler(this.authorEntryToolStripMenuItem_Click);
             // 
             // authorListToolStripMenuItem
             // 
             this.authorListToolStripMenuItem.Name = "authorListToolStripMenuItem";
-            this.authorListToolStripMenuItem.Size = new System.Drawing.Size(222, 36);
+            this.authorListToolStripMenuItem.Size = new System.Drawing.Size(207, 34);
             this.authorListToolStripMenuItem.Text = "Author List";
             this.authorListToolStripMenuItem.Click += new System.EventHandler(this.authorListToolStripMenuItem_Click);
             // 
@@ -121,21 +132,22 @@
             this.bookEntryToolStripMenuItem,
             this.bookListToolStripMenuItem});
             this.bookToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.bookToolStripMenuItem.Image = global::BookStore_Application.Properties.Resources.icons8_book_481;
             this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
-            this.bookToolStripMenuItem.Size = new System.Drawing.Size(80, 64);
+            this.bookToolStripMenuItem.Size = new System.Drawing.Size(91, 81);
             this.bookToolStripMenuItem.Text = "Book";
             // 
             // bookEntryToolStripMenuItem
             // 
             this.bookEntryToolStripMenuItem.Name = "bookEntryToolStripMenuItem";
-            this.bookEntryToolStripMenuItem.Size = new System.Drawing.Size(203, 36);
+            this.bookEntryToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
             this.bookEntryToolStripMenuItem.Text = "Book Entry";
             this.bookEntryToolStripMenuItem.Click += new System.EventHandler(this.bookEntryToolStripMenuItem_Click);
             // 
             // bookListToolStripMenuItem
             // 
             this.bookListToolStripMenuItem.Name = "bookListToolStripMenuItem";
-            this.bookListToolStripMenuItem.Size = new System.Drawing.Size(203, 36);
+            this.bookListToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
             this.bookListToolStripMenuItem.Text = "Book List";
             this.bookListToolStripMenuItem.Click += new System.EventHandler(this.bookListToolStripMenuItem_Click);
             // 
@@ -146,21 +158,22 @@
             this.genreEntryToolStripMenuItem,
             this.genreListToolStripMenuItem});
             this.genreToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.genreToolStripMenuItem.Image = global::BookStore_Application.Properties.Resources.icons8_comedy_48;
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
-            this.genreToolStripMenuItem.Size = new System.Drawing.Size(90, 64);
+            this.genreToolStripMenuItem.Size = new System.Drawing.Size(100, 81);
             this.genreToolStripMenuItem.Text = "Genre";
             // 
             // genreEntryToolStripMenuItem
             // 
             this.genreEntryToolStripMenuItem.Name = "genreEntryToolStripMenuItem";
-            this.genreEntryToolStripMenuItem.Size = new System.Drawing.Size(213, 36);
+            this.genreEntryToolStripMenuItem.Size = new System.Drawing.Size(200, 34);
             this.genreEntryToolStripMenuItem.Text = "Genre Entry";
             this.genreEntryToolStripMenuItem.Click += new System.EventHandler(this.genreEntryToolStripMenuItem_Click);
             // 
             // genreListToolStripMenuItem
             // 
             this.genreListToolStripMenuItem.Name = "genreListToolStripMenuItem";
-            this.genreListToolStripMenuItem.Size = new System.Drawing.Size(213, 36);
+            this.genreListToolStripMenuItem.Size = new System.Drawing.Size(200, 34);
             this.genreListToolStripMenuItem.Text = "Genre List";
             this.genreListToolStripMenuItem.Click += new System.EventHandler(this.genreListToolStripMenuItem_Click);
             // 
@@ -171,21 +184,22 @@
             this.publishingHouseEntryToolStripMenuItem,
             this.publishingHouseListToolStripMenuItem});
             this.publishingHouseToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.publishingHouseToolStripMenuItem.Image = global::BookStore_Application.Properties.Resources.icons8_news_48;
             this.publishingHouseToolStripMenuItem.Name = "publishingHouseToolStripMenuItem";
-            this.publishingHouseToolStripMenuItem.Size = new System.Drawing.Size(212, 64);
+            this.publishingHouseToolStripMenuItem.Size = new System.Drawing.Size(207, 81);
             this.publishingHouseToolStripMenuItem.Text = "Publishing House";
             // 
             // publishingHouseEntryToolStripMenuItem
             // 
             this.publishingHouseEntryToolStripMenuItem.Name = "publishingHouseEntryToolStripMenuItem";
-            this.publishingHouseEntryToolStripMenuItem.Size = new System.Drawing.Size(335, 36);
+            this.publishingHouseEntryToolStripMenuItem.Size = new System.Drawing.Size(307, 34);
             this.publishingHouseEntryToolStripMenuItem.Text = "Publishing House Entry";
             this.publishingHouseEntryToolStripMenuItem.Click += new System.EventHandler(this.publishingHouseEntryToolStripMenuItem_Click);
             // 
             // publishingHouseListToolStripMenuItem
             // 
             this.publishingHouseListToolStripMenuItem.Name = "publishingHouseListToolStripMenuItem";
-            this.publishingHouseListToolStripMenuItem.Size = new System.Drawing.Size(335, 36);
+            this.publishingHouseListToolStripMenuItem.Size = new System.Drawing.Size(307, 34);
             this.publishingHouseListToolStripMenuItem.Text = "Publishing House List";
             this.publishingHouseListToolStripMenuItem.Click += new System.EventHandler(this.publishingHouseListToolStripMenuItem_Click);
             // 
@@ -196,192 +210,188 @@
             this.supplierEntryToolStripMenuItem,
             this.supplierListToolStripMenuItem});
             this.supplierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.supplierToolStripMenuItem.Image = global::BookStore_Application.Properties.Resources.icons8_hangar_48;
             this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
-            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(114, 64);
+            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(121, 81);
             this.supplierToolStripMenuItem.Text = "Supplier";
             // 
             // supplierEntryToolStripMenuItem
             // 
             this.supplierEntryToolStripMenuItem.Name = "supplierEntryToolStripMenuItem";
-            this.supplierEntryToolStripMenuItem.Size = new System.Drawing.Size(237, 36);
+            this.supplierEntryToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
             this.supplierEntryToolStripMenuItem.Text = "Supplier Entry";
             this.supplierEntryToolStripMenuItem.Click += new System.EventHandler(this.supplierEntryToolStripMenuItem_Click);
             // 
             // supplierListToolStripMenuItem
             // 
             this.supplierListToolStripMenuItem.Name = "supplierListToolStripMenuItem";
-            this.supplierListToolStripMenuItem.Size = new System.Drawing.Size(237, 36);
+            this.supplierListToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
             this.supplierListToolStripMenuItem.Text = "Supplier List";
             this.supplierListToolStripMenuItem.Click += new System.EventHandler(this.supplierListToolStripMenuItem_Click);
             // 
-            // menuStrip2
+            // allListsToolStripMenuItem
             // 
-            this.menuStrip2.AutoSize = false;
-            this.menuStrip2.BackColor = System.Drawing.Color.Ivory;
-            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 17F);
-            this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(1);
-            this.menuStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stockToolStripMenuItem,
-            this.bookingToolStripMenuItem,
-            this.purchaseToolStripMenuItem,
-            this.saleToolStripMenuItem,
-            this.reportToolStripMenuItem});
-            this.menuStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip2.Size = new System.Drawing.Size(117, 518);
-            this.menuStrip2.TabIndex = 1;
-            this.menuStrip2.Text = "menuStrip2";
+            this.allListsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockListsToolStripMenuItem,
+            this.bookingListsToolStripMenuItem,
+            this.purchaseListsToolStripMenuItem,
+            this.saleListsToolStripMenuItem});
+            this.allListsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.allListsToolStripMenuItem.Image = global::BookStore_Application.Properties.Resources.icons8_news_48;
+            this.allListsToolStripMenuItem.Name = "allListsToolStripMenuItem";
+            this.allListsToolStripMenuItem.Size = new System.Drawing.Size(111, 81);
+            this.allListsToolStripMenuItem.Text = "All Lists";
             // 
-            // stockToolStripMenuItem
+            // stockListsToolStripMenuItem
             // 
-            this.stockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stockEntryToolStripMenuItem,
-            this.stockListToolStripMenuItem});
-            this.stockToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
-            this.stockToolStripMenuItem.Size = new System.Drawing.Size(83, 35);
-            this.stockToolStripMenuItem.Text = "Stock";
+            this.stockListsToolStripMenuItem.Name = "stockListsToolStripMenuItem";
+            this.stockListsToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
+            this.stockListsToolStripMenuItem.Text = "Stock Lists";
+            this.stockListsToolStripMenuItem.Click += new System.EventHandler(this.stockListsToolStripMenuItem_Click);
             // 
-            // stockEntryToolStripMenuItem
+            // bookingListsToolStripMenuItem
             // 
-            this.stockEntryToolStripMenuItem.Name = "stockEntryToolStripMenuItem";
-            this.stockEntryToolStripMenuItem.Size = new System.Drawing.Size(206, 36);
-            this.stockEntryToolStripMenuItem.Text = "Stock Entry";
-            this.stockEntryToolStripMenuItem.Click += new System.EventHandler(this.stockEntryToolStripMenuItem_Click);
+            this.bookingListsToolStripMenuItem.Name = "bookingListsToolStripMenuItem";
+            this.bookingListsToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
+            this.bookingListsToolStripMenuItem.Text = "Booking Lists";
+            this.bookingListsToolStripMenuItem.Click += new System.EventHandler(this.bookingListsToolStripMenuItem_Click);
             // 
-            // stockListToolStripMenuItem
+            // purchaseListsToolStripMenuItem
             // 
-            this.stockListToolStripMenuItem.Name = "stockListToolStripMenuItem";
-            this.stockListToolStripMenuItem.Size = new System.Drawing.Size(206, 36);
-            this.stockListToolStripMenuItem.Text = "Stock List";
-            this.stockListToolStripMenuItem.Click += new System.EventHandler(this.stockListToolStripMenuItem_Click);
+            this.purchaseListsToolStripMenuItem.Name = "purchaseListsToolStripMenuItem";
+            this.purchaseListsToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
+            this.purchaseListsToolStripMenuItem.Text = "Purchase Lists";
+            this.purchaseListsToolStripMenuItem.Click += new System.EventHandler(this.purchaseListsToolStripMenuItem_Click);
             // 
-            // bookingToolStripMenuItem
+            // saleListsToolStripMenuItem
             // 
-            this.bookingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bookingEntryToolStripMenuItem,
-            this.bookingListToolStripMenuItem});
-            this.bookingToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookingToolStripMenuItem.Name = "bookingToolStripMenuItem";
-            this.bookingToolStripMenuItem.Size = new System.Drawing.Size(113, 35);
-            this.bookingToolStripMenuItem.Text = "Booking";
+            this.saleListsToolStripMenuItem.Name = "saleListsToolStripMenuItem";
+            this.saleListsToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
+            this.saleListsToolStripMenuItem.Text = "Sale Lists";
+            this.saleListsToolStripMenuItem.Click += new System.EventHandler(this.saleListsToolStripMenuItem_Click);
             // 
-            // bookingEntryToolStripMenuItem
+            // reportsToolStripMenuItem
             // 
-            this.bookingEntryToolStripMenuItem.Name = "bookingEntryToolStripMenuItem";
-            this.bookingEntryToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
-            this.bookingEntryToolStripMenuItem.Text = "Booking Entry";
-            this.bookingEntryToolStripMenuItem.Click += new System.EventHandler(this.bookingEntryToolStripMenuItem_Click);
+            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bookingDetailsToolStripMenuItem1,
+            this.purchaseDetailsToolStripMenuItem1,
+            this.saleDetailsToolStripMenuItem1});
+            this.reportsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.reportsToolStripMenuItem.Image = global::BookStore_Application.Properties.Resources.icons8_scroll_48;
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(115, 81);
+            this.reportsToolStripMenuItem.Text = "Reports";
             // 
-            // bookingListToolStripMenuItem
+            // bookingDetailsToolStripMenuItem1
             // 
-            this.bookingListToolStripMenuItem.Name = "bookingListToolStripMenuItem";
-            this.bookingListToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
-            this.bookingListToolStripMenuItem.Text = "Booking List";
-            this.bookingListToolStripMenuItem.Click += new System.EventHandler(this.bookingListToolStripMenuItem_Click);
+            this.bookingDetailsToolStripMenuItem1.Name = "bookingDetailsToolStripMenuItem1";
+            this.bookingDetailsToolStripMenuItem1.Size = new System.Drawing.Size(242, 34);
+            this.bookingDetailsToolStripMenuItem1.Text = "Booking Details";
+            this.bookingDetailsToolStripMenuItem1.Click += new System.EventHandler(this.bookingDetailsToolStripMenuItem1_Click);
             // 
-            // purchaseToolStripMenuItem
+            // purchaseDetailsToolStripMenuItem1
             // 
-            this.purchaseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.purchaseEntryToolStripMenuItem,
-            this.purchaseListToolStripMenuItem});
-            this.purchaseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
-            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(119, 35);
-            this.purchaseToolStripMenuItem.Text = "Purchase";
+            this.purchaseDetailsToolStripMenuItem1.Name = "purchaseDetailsToolStripMenuItem1";
+            this.purchaseDetailsToolStripMenuItem1.Size = new System.Drawing.Size(242, 34);
+            this.purchaseDetailsToolStripMenuItem1.Text = "Purchase Details";
+            this.purchaseDetailsToolStripMenuItem1.Click += new System.EventHandler(this.purchaseDetailsToolStripMenuItem1_Click);
             // 
-            // purchaseEntryToolStripMenuItem
+            // saleDetailsToolStripMenuItem1
             // 
-            this.purchaseEntryToolStripMenuItem.Name = "purchaseEntryToolStripMenuItem";
-            this.purchaseEntryToolStripMenuItem.Size = new System.Drawing.Size(242, 36);
-            this.purchaseEntryToolStripMenuItem.Text = "Purchase Entry";
-            this.purchaseEntryToolStripMenuItem.Click += new System.EventHandler(this.purchaseEntryToolStripMenuItem_Click);
+            this.saleDetailsToolStripMenuItem1.Name = "saleDetailsToolStripMenuItem1";
+            this.saleDetailsToolStripMenuItem1.Size = new System.Drawing.Size(242, 34);
+            this.saleDetailsToolStripMenuItem1.Text = "Sale Details";
+            this.saleDetailsToolStripMenuItem1.Click += new System.EventHandler(this.saleDetailsToolStripMenuItem1_Click);
             // 
-            // purchaseListToolStripMenuItem
+            // pictureBox1
             // 
-            this.purchaseListToolStripMenuItem.Name = "purchaseListToolStripMenuItem";
-            this.purchaseListToolStripMenuItem.Size = new System.Drawing.Size(242, 36);
-            this.purchaseListToolStripMenuItem.Text = "Purchase List";
-            this.purchaseListToolStripMenuItem.Click += new System.EventHandler(this.purchaseListToolStripMenuItem_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.pictureBox1.Image = global::BookStore_Application.Properties.Resources.icons8_menu_48;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 31);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
-            // saleToolStripMenuItem
+            // btnStock
             // 
-            this.saleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saleListToolStripMenuItem});
-            this.saleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 17.25F, System.Drawing.FontStyle.Bold);
-            this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            this.saleToolStripMenuItem.Size = new System.Drawing.Size(69, 35);
-            this.saleToolStripMenuItem.Text = "Sale";
+            this.btnStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.btnStock.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.btnStock.ForeColor = System.Drawing.Color.White;
+            this.btnStock.Image = global::BookStore_Application.Properties.Resources.icons8_hangar_481;
+            this.btnStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStock.Location = new System.Drawing.Point(727, 176);
+            this.btnStock.Name = "btnStock";
+            this.btnStock.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnStock.Size = new System.Drawing.Size(329, 146);
+            this.btnStock.TabIndex = 4;
+            this.btnStock.Text = "            STOCK";
+            this.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStock.UseVisualStyleBackColor = false;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
-            // saleListToolStripMenuItem
+            // btnPurchase
             // 
-            this.saleListToolStripMenuItem.Name = "saleListToolStripMenuItem";
-            this.saleListToolStripMenuItem.Size = new System.Drawing.Size(172, 36);
-            this.saleListToolStripMenuItem.Text = "Sale List";
-            this.saleListToolStripMenuItem.Click += new System.EventHandler(this.saleListToolStripMenuItem_Click);
+            this.btnPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.btnPurchase.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.btnPurchase.ForeColor = System.Drawing.Color.White;
+            this.btnPurchase.Image = global::BookStore_Application.Properties.Resources.icons8_purchase_48;
+            this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPurchase.Location = new System.Drawing.Point(41, 176);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnPurchase.Size = new System.Drawing.Size(329, 146);
+            this.btnPurchase.TabIndex = 4;
+            this.btnPurchase.Text = "            PURCHASE";
+            this.btnPurchase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPurchase.UseVisualStyleBackColor = false;
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
-            // reportToolStripMenuItem
+            // btnBooking
             // 
-            this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bookingDetailsToolStripMenuItem,
-            this.purchaseDetailsToolStripMenuItem,
-            this.saleDetailsToolStripMenuItem});
-            this.reportToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 17.25F, System.Drawing.FontStyle.Bold);
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(97, 35);
-            this.reportToolStripMenuItem.Text = "Report";
+            this.btnBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.btnBooking.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
+            this.btnBooking.Image = global::BookStore_Application.Properties.Resources.icons8_billing_machine_961;
+            this.btnBooking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBooking.Location = new System.Drawing.Point(384, 176);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnBooking.Size = new System.Drawing.Size(329, 146);
+            this.btnBooking.TabIndex = 4;
+            this.btnBooking.Text = "               BOOKING";
+            this.btnBooking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBooking.UseVisualStyleBackColor = false;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
-            // bookingDetailsToolStripMenuItem
+            // btnPos
             // 
-            this.bookingDetailsToolStripMenuItem.Name = "bookingDetailsToolStripMenuItem";
-            this.bookingDetailsToolStripMenuItem.Size = new System.Drawing.Size(258, 36);
-            this.bookingDetailsToolStripMenuItem.Text = "Booking Details";
-            this.bookingDetailsToolStripMenuItem.Click += new System.EventHandler(this.bookingDetailsToolStripMenuItem_Click);
-            // 
-            // purchaseDetailsToolStripMenuItem
-            // 
-            this.purchaseDetailsToolStripMenuItem.Name = "purchaseDetailsToolStripMenuItem";
-            this.purchaseDetailsToolStripMenuItem.Size = new System.Drawing.Size(258, 36);
-            this.purchaseDetailsToolStripMenuItem.Text = "Purchase Details";
-            this.purchaseDetailsToolStripMenuItem.Click += new System.EventHandler(this.purchaseDetailsToolStripMenuItem_Click);
-            // 
-            // saleDetailsToolStripMenuItem
-            // 
-            this.saleDetailsToolStripMenuItem.Name = "saleDetailsToolStripMenuItem";
-            this.saleDetailsToolStripMenuItem.Size = new System.Drawing.Size(258, 36);
-            this.saleDetailsToolStripMenuItem.Text = "Sale Details";
-            this.saleDetailsToolStripMenuItem.Click += new System.EventHandler(this.saleDetailsToolStripMenuItem_Click);
-            // 
-            // btnToSystem
-            // 
-            this.btnToSystem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnToSystem.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnToSystem.BackgroundImage = global::BookStore_Application.Properties.Resources.zJywIf;
-            this.btnToSystem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnToSystem.Font = new System.Drawing.Font("Palatino Linotype", 28.75F, System.Drawing.FontStyle.Bold);
-            this.btnToSystem.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnToSystem.Location = new System.Drawing.Point(283, 156);
-            this.btnToSystem.Name = "btnToSystem";
-            this.btnToSystem.Size = new System.Drawing.Size(294, 148);
-            this.btnToSystem.TabIndex = 2;
-            this.btnToSystem.Text = "POS SYSTEM";
-            this.btnToSystem.UseVisualStyleBackColor = false;
-            this.btnToSystem.Click += new System.EventHandler(this.btnToSystem_Click);
+            this.btnPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.btnPos.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.btnPos.ForeColor = System.Drawing.Color.White;
+            this.btnPos.Image = global::BookStore_Application.Properties.Resources.icons8_grocery_store_96;
+            this.btnPos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPos.Location = new System.Drawing.Point(384, 353);
+            this.btnPos.Name = "btnPos";
+            this.btnPos.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnPos.Size = new System.Drawing.Size(329, 146);
+            this.btnPos.TabIndex = 4;
+            this.btnPos.Text = "               POS SYSTEM";
+            this.btnPos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPos.UseVisualStyleBackColor = false;
+            this.btnPos.Click += new System.EventHandler(this.btnPos_Click);
             // 
             // btnCloseMain
             // 
             this.btnCloseMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCloseMain.BackColor = System.Drawing.Color.Maroon;
+            this.btnCloseMain.BackColor = System.Drawing.Color.Firebrick;
             this.btnCloseMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.btnCloseMain.Location = new System.Drawing.Point(0, 445);
+            this.btnCloseMain.Image = global::BookStore_Application.Properties.Resources.icons8_log_out_481;
+            this.btnCloseMain.Location = new System.Drawing.Point(0, 593);
             this.btnCloseMain.Name = "btnCloseMain";
-            this.btnCloseMain.Size = new System.Drawing.Size(117, 73);
+            this.btnCloseMain.Size = new System.Drawing.Size(88, 64);
             this.btnCloseMain.TabIndex = 3;
-            this.btnCloseMain.Text = "Close";
             this.btnCloseMain.UseVisualStyleBackColor = false;
             this.btnCloseMain.Click += new System.EventHandler(this.btnCloseMain_Click);
             // 
@@ -389,14 +399,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FloralWhite;
-            this.BackgroundImage = global::BookStore_Application.Properties.Resources.Walpaper__1920_1080_;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(732, 518);
-            this.Controls.Add(this.btnToSystem);
-            this.Controls.Add(this.btnCloseMain);
+            this.ClientSize = new System.Drawing.Size(1100, 657);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.menuStrip2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnStock);
+            this.Controls.Add(this.btnPurchase);
+            this.Controls.Add(this.btnBooking);
+            this.Controls.Add(this.btnPos);
+            this.Controls.Add(this.btnCloseMain);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
@@ -404,8 +417,8 @@
             this.Text = "Book Main";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -418,16 +431,6 @@
         private System.Windows.Forms.ToolStripMenuItem genreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem publishingHouseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supplierToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bookingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem purchaseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bookingDetailsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem purchaseDetailsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saleDetailsToolStripMenuItem;
-        private System.Windows.Forms.Button btnToSystem;
         private System.Windows.Forms.Button btnCloseMain;
         private System.Windows.Forms.ToolStripMenuItem authorEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem authorListToolStripMenuItem;
@@ -439,12 +442,20 @@
         private System.Windows.Forms.ToolStripMenuItem publishingHouseListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supplierEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supplierListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stockEntryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stockListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bookingEntryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bookingListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem purchaseEntryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem purchaseListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saleListToolStripMenuItem;
+        private System.Windows.Forms.Button btnPos;
+        private System.Windows.Forms.Button btnBooking;
+        private System.Windows.Forms.Button btnPurchase;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem allListsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockListsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookingListsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem purchaseListsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saleListsToolStripMenuItem;
+        private System.Windows.Forms.Button btnStock;
+        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookingDetailsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem purchaseDetailsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem saleDetailsToolStripMenuItem1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

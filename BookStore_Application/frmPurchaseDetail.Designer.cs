@@ -154,6 +154,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2218, 1091);
             this.Controls.Add(this.dgvSale);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frmPurchaseDetail";
             this.Text = "frmPurchaseDetail";
             this.Load += new System.EventHandler(this.frmPurchaseDetail_Load);

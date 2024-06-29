@@ -19,8 +19,8 @@ namespace BookStore_Application
 
         private void btnCloseMain_Click(object sender, EventArgs e)
         {
-            Close();
-        }
+           Close();
+         }
 
         private void authorEntryToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -82,70 +82,70 @@ namespace BookStore_Application
             frmSupplierList.Show();
         }
 
-        private void stockEntryToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnPos_Click(object sender, EventArgs e)
         {
-            frmStockEntry frmStockEntry = new frmStockEntry();
-            frmStockEntry.Show();
+            frmBookSystembtn frmBookSystembtn = new frmBookSystembtn();
+            frmBookSystembtn.Show();
         }
 
-        private void stockListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmStockList frmStockList = new frmStockList();
-            frmStockList.Show();
-        }
-
-        private void bookingEntryToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnBooking_Click(object sender, EventArgs e)
         {
             frmBookingEntry frmBookingEntry = new frmBookingEntry();
             frmBookingEntry.Show();
         }
 
-        private void bookingListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmBookingList frmBookingList = new frmBookingList();
-            frmBookingList.Show();
-        }
-
-        private void purchaseEntryToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnPurchase_Click(object sender, EventArgs e)
         {
             frmPurchaseEntry frmPurchaseEntry = new frmPurchaseEntry();
             frmPurchaseEntry.Show();
         }
 
-        private void purchaseListToolStripMenuItem_Click(object sender, EventArgs e)
+        private void stockListsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStockList frmStockList = new frmStockList();
+            frmStockList.Show();
+        }
+
+        private void bookingListsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBookingList frmBookingList = new frmBookingList();
+            frmBookingList.Show();
+        }
+
+        private void purchaseListsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPurchaseList frmPurchaseList = new frmPurchaseList();
             frmPurchaseList.Show();
         }
 
-        private void saleListToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saleListsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSaleList frmSaleList = new frmSaleList();
             frmSaleList.Show();
         }
 
-        private void bookingDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+            frmStockEntry frmStockEntry = new frmStockEntry();
+            frmStockEntry.Show();
+        }
+
+        private void bookingDetailsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmBookingDetail frmBookingDetail = new frmBookingDetail();
             frmBookingDetail.Show();
         }
 
-        private void purchaseDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void purchaseDetailsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmPurchaseDetail frmPurchaseDetail = new frmPurchaseDetail();
             frmPurchaseDetail.Show();
         }
 
-        private void saleDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saleDetailsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmSaleDetail frmSaleDetail = new frmSaleDetail();
             frmSaleDetail.Show();
-        }
-
-        private void btnToSystem_Click(object sender, EventArgs e)
-        {
-            frmBookSystembtn frmBookSystembtn = new frmBookSystembtn();
-            frmBookSystembtn.Show();
         }
     }
 }

@@ -83,16 +83,6 @@ namespace BookStore_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _56dc47d9_31b7_4313_b2ca_f96f5157c726 {
-            get {
-                object obj = ResourceManager.GetObject("56dc47d9-31b7-4313-b2ca-f96f5157c726", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _858754 {
             get {
                 object obj = ResourceManager.GetObject("858754", resourceCulture);
@@ -113,10 +103,269 @@ namespace BookStore_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Download_premium_vector_of_Colorful_fluid_gradient_background_vector_by_Kappy_about_composition__fluid_gradients__liquid_gradient__3d__and_abstract_558879 {
+        internal static System.Drawing.Bitmap icons8_author_48 {
             get {
-                object obj = ResourceManager.GetObject("Download premium vector of Colorful fluid gradient background vector by Kappy abo" +
-                        "ut composition, fluid gradients, liquid gradient, 3d, and abstract 558879", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-author-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_billing_machine_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-billing-machine-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_billing_machine_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-billing-machine-961", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_book_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-book-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_book_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-book-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cash_register_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cash-register-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_60 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_601 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-601", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_comedy_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-comedy-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_dashboard_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-dashboard-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_folder_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-folder-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_grocery_store_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-grocery-store-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hangar_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hangar-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hangar_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hangar-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_key_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-key-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_log_out_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-log-out-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_log_out_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-log-out-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_log_out_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-log-out-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_male_user_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-male-user-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_news_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-news-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_purchase_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-purchase-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_purchase_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-purchase-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_report_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-report-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_scroll_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-scroll-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_shield_52 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-shield-52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -154,30 +403,9 @@ namespace BookStore_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Miami_WPLC0214 {
-            get {
-                object obj = ResourceManager.GetObject("Miami WPLC0214", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Mountain {
             get {
                 object obj = ResourceManager.GetObject("Mountain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Pure_Color_Pigment_Inkjet_Splash_Cool_Background__Color__Gradient__Pigment_Background_Image_And_Wallpaper_for_Free_Download {
-            get {
-                object obj = ResourceManager.GetObject("Pure Color Pigment Inkjet Splash Cool Background, Color, Gradient, Pigment Backgr" +
-                        "ound Image And Wallpaper for Free Download", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

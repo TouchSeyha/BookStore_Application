@@ -60,7 +60,6 @@
             this.cmbEmployee = new System.Windows.Forms.ComboBox();
             this.cmbCustomer = new System.Windows.Forms.ComboBox();
             this.txtInvoice = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnGetData = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClearNew = new System.Windows.Forms.Button();
@@ -69,6 +68,7 @@
             this.txtboxAmountRemain = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtboxAmountPaid = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooking)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -109,7 +109,7 @@
             this.dgvBooking.AllowUserToAddRows = false;
             this.dgvBooking.AllowUserToDeleteRows = false;
             this.dgvBooking.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBooking.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dgvBooking.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
             this.dgvBooking.ColumnHeadersHeight = 40;
             this.dgvBooking.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -120,13 +120,13 @@
             this.Column5});
             this.dgvBooking.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvBooking.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvBooking.Location = new System.Drawing.Point(0, 384);
+            this.dgvBooking.Location = new System.Drawing.Point(0, 385);
             this.dgvBooking.Margin = new System.Windows.Forms.Padding(1);
             this.dgvBooking.Name = "dgvBooking";
             this.dgvBooking.ReadOnly = true;
             this.dgvBooking.RowHeadersWidth = 123;
             this.dgvBooking.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBooking.Size = new System.Drawing.Size(1443, 473);
+            this.dgvBooking.Size = new System.Drawing.Size(1443, 472);
             this.dgvBooking.TabIndex = 91;
             // 
             // Column1
@@ -191,10 +191,10 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Location = new System.Drawing.Point(0, 93);
+            this.panel2.Location = new System.Drawing.Point(0, 92);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(696, 289);
+            this.panel2.Size = new System.Drawing.Size(696, 290);
             this.panel2.TabIndex = 82;
             // 
             // txtDiscount
@@ -405,21 +405,19 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel1.BackgroundImage = global::BookStore_Application.Properties.Resources.Lofi_wallpaper;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.cmbEmployee);
             this.panel1.Controls.Add(this.cmbCustomer);
             this.panel1.Controls.Add(this.txtInvoice);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1599, 89);
+            this.panel1.Size = new System.Drawing.Size(1443, 89);
             this.panel1.TabIndex = 62;
             // 
             // label13
@@ -504,29 +502,13 @@
             this.txtInvoice.Size = new System.Drawing.Size(67, 32);
             this.txtInvoice.TabIndex = 12;
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 15F);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1, -1);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 89);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Booking Entry";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnGetData
             // 
             this.btnGetData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGetData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetData.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGetData.Location = new System.Drawing.Point(31, 185);
+            this.btnGetData.Location = new System.Drawing.Point(30, 183);
             this.btnGetData.Margin = new System.Windows.Forms.Padding(1);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(304, 55);
@@ -541,7 +523,7 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.Location = new System.Drawing.Point(31, 118);
+            this.btnSave.Location = new System.Drawing.Point(30, 116);
             this.btnSave.Margin = new System.Windows.Forms.Padding(1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(304, 55);
@@ -556,7 +538,7 @@
             this.btnClearNew.BackColor = System.Drawing.Color.LightCoral;
             this.btnClearNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearNew.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnClearNew.Location = new System.Drawing.Point(31, 46);
+            this.btnClearNew.Location = new System.Drawing.Point(30, 44);
             this.btnClearNew.Margin = new System.Windows.Forms.Padding(1);
             this.btnClearNew.Name = "btnClearNew";
             this.btnClearNew.Size = new System.Drawing.Size(304, 55);
@@ -569,15 +551,14 @@
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel4.BackgroundImage = global::BookStore_Application.Properties.Resources.Black_Texture_Texture_Background_Wallpaper_Image_For_Free_Download___Pngtree;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.btnClearNew);
             this.panel4.Controls.Add(this.btnSave);
             this.panel4.Controls.Add(this.btnGetData);
             this.panel4.Location = new System.Drawing.Point(1088, 93);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(511, 289);
+            this.panel4.Size = new System.Drawing.Size(355, 289);
             this.panel4.TabIndex = 90;
             // 
             // label9
@@ -635,12 +616,26 @@
             this.txtboxAmountPaid.Click += new System.EventHandler(this.txtboxAmountPaid_Click);
             this.txtboxAmountPaid.TextChanged += new System.EventHandler(this.txtboxAmountPaid_TextChanged);
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 15F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(1, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 89);
+            this.label3.TabIndex = 87;
+            this.label3.Text = "Booking Entry";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmBookingEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
-            this.BackgroundImage = global::BookStore_Application.Properties.Resources.Black_Texture_Texture_Background_Wallpaper_Image_For_Free_Download___Pngtree;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1443, 857);
             this.Controls.Add(this.label9);
@@ -677,7 +672,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbEmployee;
         private System.Windows.Forms.ComboBox cmbCustomer;
         private System.Windows.Forms.TextBox txtInvoice;
@@ -710,5 +704,6 @@
         private System.Windows.Forms.TextBox txtboxAmountRemain;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtboxAmountPaid;
+        private System.Windows.Forms.Label label3;
     }
 }

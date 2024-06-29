@@ -26,7 +26,7 @@ namespace BookStore_Application
         public decimal TotalAmount { get; set; }
         public Nullable<decimal> TotalDiscount { get; set; }
         public decimal FinalAmount { get; set; }
-        public decimal AmountPaid { get; set; }
+        public Nullable<decimal> AmountPaid { get; set; }
         public decimal AmountRemain { get; set; }
         public string Note { get; set; }
         public System.DateTime Created { get; set; }

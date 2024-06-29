@@ -17,11 +17,12 @@ namespace BookStore_Application
         {
             InitializeComponent();
         }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string usernameInput = txtUsername.Text;
             string passwordInput = txtPassword.Text;
-
+            
             if (string.IsNullOrEmpty(usernameInput))
             {
                 MessageBox.Show("Please input Username");
@@ -43,21 +44,45 @@ namespace BookStore_Application
 
                 AppManager.GetInstance().loginEmployee = employee;
 
-
+              
                 frmMain main = new frmMain();
+
                 main.Show();
                 Hide();
             }
             else
             {
+                
+                btnLogin.FlatAppearance.BorderColor = Color.OrangeRed;
+                btnLogin.ForeColor = Color.OrangeRed;
                 MessageBox.Show("Username or password incorrect!");
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.Text = "";
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            txtUsername.ForeColor = Color.White;
+        }
+
+        private void txtUsername_Click_1(object sender, EventArgs e)
+        {
+            txtUsername.Text = "";
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            txtPassword.ForeColor = Color.White;
+
+       }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Close();
         }
-
     }
 }

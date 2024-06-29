@@ -533,8 +533,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel1.BackgroundImage = global::BookStore_Application.Properties.Resources.zJywIf;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label13);
@@ -653,7 +652,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::BookStore_Application.Properties.Resources.Black_Texture_Texture_Background_Wallpaper_Image_For_Free_Download___Pngtree;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1443, 854);
             this.Controls.Add(this.txtDiscount);
