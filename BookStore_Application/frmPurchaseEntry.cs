@@ -56,9 +56,11 @@ namespace BookStore_Application
             dgvSale.Rows.Clear();
             tempProductList.Clear();
 
-            txtboxFinalTotalPrice.Text = "0";
-            txtboxAmountPaid.Text = "0";
-            txtboxAmountRemain.Text = "0";
+            txtDiscount.Text = "";
+
+            txtboxFinalTotalPrice.Text = 0m.ToString("F2");
+            txtboxAmountPaid.Text = 0m.ToString("F2");
+            txtboxAmountRemain.Text = 0m.ToString("F2");
 
         }
 
@@ -151,7 +153,8 @@ namespace BookStore_Application
                 int quantity = int.Parse(txtQuantity.Text);
 
                 decimal totalPrice = sellingPrice * quantity;
-                decimal discountPercentage = decimal.Parse(txtDiscount.Text); // Let say we discount 15%
+
+                decimal discountPercentage = GetDiscountOrDefault(txtDiscount.Text);
                 decimal discount = (totalPrice * discountPercentage) / 100; ;
                 decimal finalPrice = totalPrice - discount; 
 
@@ -160,9 +163,35 @@ namespace BookStore_Application
 
                 BindProductList();
                 Clear();
-            }
 
-            txtboxFinalTotalPrice.Text = GetTotalAmount().ToString();
+                txtboxFinalTotalPrice.Text = GetFinalAmount().ToString();
+
+
+                // Calculate remaining amount
+                decimal finalTotalPrice = decimal.Parse(txtboxFinalTotalPrice.Text);
+                decimal amountRemain = finalTotalPrice - 0;
+                txtboxAmountRemain.Text = amountRemain.ToString();
+            }
+        }
+
+        private decimal GetDiscountOrDefault(string discountText)
+        {
+            if (decimal.TryParse(discountText, out decimal discount))
+            {
+                return discount;
+            }
+            return 0; // Return 0 if the discount is not provided or invalid
+        }
+
+        private decimal GetFinalAmount()
+        {
+            decimal finalAmount = 0;
+
+            foreach (ClsTempPurchase p in tempProductList) 
+            {
+                finalAmount += p.FinalPrice;
+            }
+            return finalAmount;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -217,22 +246,23 @@ namespace BookStore_Application
                 return;
             }
 
-            Purchase sale = new Purchase();
+            Purchase sale = new Purchase()
+            {
 
-            sale.PurchaseId = GetLatestInvoiceId() + 1;
-            sale.Employee = db.Employees
+                PurchaseId = GetLatestInvoiceId() + 1,
+                Employee = db.Employees
                                 .Where(emp => emp.EmployeeName == employeeName)
-                                .FirstOrDefault();
-            sale.Supplier = db.Suppliers
+                                .FirstOrDefault(),
+                Supplier = db.Suppliers
                                 .Where(cus => cus.SupplierName == customerName)
-                                .FirstOrDefault();
-            sale.TotalAmount = GetTotalAmount();
-            sale.AmountPaid = decimal.Parse(txtboxAmountPaid.Text); // Need to modify show in Text task box 
-            sale.AmountRemain = decimal.Parse(txtboxAmountRemain.Text); // Need to modify show in Text task box 
-            sale.TotalDiscount = decimal.Parse(txtDiscount.Text);
-            sale.Created = DateTime.Now;
-            sale.Updated = DateTime.Now;
-
+                                .FirstOrDefault(),
+                TotalAmount = GetTotalAmount(),
+                AmountPaid = decimal.Parse(txtboxAmountPaid.Text),
+                AmountRemain = decimal.Parse(txtboxAmountRemain.Text),
+                TotalDiscount = GetDiscountOrDefault(txtDiscount.Text),
+                Created = DateTime.Now,
+                Updated = DateTime.Now,
+            };
             db.Purchases.Add(sale);
             db.SaveChanges();
 
@@ -294,6 +324,9 @@ namespace BookStore_Application
                 txtInvoice.Text = invoiceId.ToString();
                 cmbCustomer.Text = sale.Supplier.SupplierName;
                 cmbEmployee.Text = sale.Employee.EmployeeName;
+                txtboxFinalTotalPrice.Text = sale.TotalAmount.ToString();
+                txtboxAmountPaid.Text = sale.AmountPaid.ToString();
+                txtboxAmountRemain.Text = sale.AmountRemain.ToString();
 
                 // add data to gridview
 
@@ -316,6 +349,26 @@ namespace BookStore_Application
 
                 BindProductList();
             }
+        }
+
+        private void txtboxAmountPaid_Click(object sender, EventArgs e)
+        {
+            txtboxAmountPaid.Text = "";
+        }
+
+        private void txtboxAmountPaid_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtboxAmountPaid.Text) ||
+                string.IsNullOrEmpty(txtboxFinalTotalPrice.Text))
+            {
+                return;
+            }
+
+            double finalTotalPrice = Convert.ToDouble(txtboxFinalTotalPrice.Text);
+            double totalAmountPay = Convert.ToDouble(txtboxAmountPaid.Text);
+            double amountRemain = finalTotalPrice - totalAmountPay;
+
+            txtboxAmountRemain.Text = amountRemain.ToString();
         }
     }
 }

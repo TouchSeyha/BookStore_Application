@@ -46,7 +46,7 @@ namespace BookStore_Application
                     string value = dgvBooking.SelectedRows[0].Cells[0].Value.ToString();
                     int BookingId = int.Parse(value);
 
-                    bookSystembtn.LoadDataToForm(BookingId);
+                    bookSystembtn.LoadDataFromBooking(BookingId);
                     Close();
                 }
             }

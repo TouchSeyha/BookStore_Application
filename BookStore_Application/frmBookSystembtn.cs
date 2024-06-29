@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BookStore_Application
@@ -18,8 +14,6 @@ namespace BookStore_Application
         }
 
         private BookStoreDBEntities db = new BookStoreDBEntities();
-
-        public List<ClsTempPurchase> tempProductList = new List<ClsTempPurchase>();
 
         public List<ClsTempSale> tempSaleList = new List<ClsTempSale>();
         private void frmBookSystembtn_Load(object sender, EventArgs e)
@@ -55,12 +49,12 @@ namespace BookStore_Application
             cmbCustomer.Text = "";
             Clear();
             dgvSale.Rows.Clear();
-            tempProductList.Clear();
             tempSaleList.Clear();
+            txtDiscount.Text = "";
 
-            txtboxFinalTotalPrice.Text = "0";
-            txtboxAmountPaid.Text = "0";
-            txtboxAmountRemain.Text = "0";
+            txtboxFinalTotalPrice.Text = 0m.ToString("F2");
+            txtboxAmountPaid.Text = 0m.ToString("F2");
+            txtboxAmountRemain.Text = 0m.ToString("F2");
         }
 
         private int GetLatestInvoiceId()
@@ -82,8 +76,8 @@ namespace BookStore_Application
             {
                 txtBookTitle.Text = booking.Title.ToString();
                 txtSellingprice.Text = booking.SellingPrice.ToString();
-                txtQuantity.Text = "1"; // Update live when insert new quantity fix
-  
+                txtQuantity.Text = "1";
+
 
                 Stock stock = db.Stocks
                             .Where(s => s.StockId == bookingId).FirstOrDefault();
@@ -140,7 +134,25 @@ namespace BookStore_Application
             CalculateTotalPrice();
         }
 
-        // Will need a new bind for salelist
+        private void DeleteBooking(int bookingId)
+        {
+            var booking = db.Bookings
+                            .Where(b => b.BookingId == bookingId)
+                            .FirstOrDefault();
+
+            if (booking != null)
+            {
+                var bookingDetails = db.BookingDetails
+                                    .Where(bd => bd.BookingId == bookingId)
+                                    .ToList();
+
+                db.BookingDetails.RemoveRange(bookingDetails);
+                db.Bookings.Remove(booking);
+                db.SaveChanges();
+
+                MessageBox.Show("Booking deleted successfully.");
+            }
+        }
 
         private void btnShowBookId_Click(object sender, EventArgs e)
         {
@@ -164,24 +176,40 @@ namespace BookStore_Application
                 string productName = txtBookTitle.Text;
                 decimal sellingPrice = decimal.Parse(txtSellingprice.Text);
                 int quantity = int.Parse(txtQuantity.Text);
-                
+
                 decimal totalPrice = sellingPrice * quantity;
-                
-                decimal discountPercentage = decimal.Parse(txtDiscount.Text);
+
+                decimal discountPercentage = GetDiscountOrDefault(txtDiscount.Text);
                 decimal discount = (totalPrice * discountPercentage) / 100; ;
                 decimal finalPrice = totalPrice - discount;
-              
+
 
                 ClsTempSale product = new ClsTempSale(productName, sellingPrice, quantity, totalPrice, discountPercentage, discount, finalPrice);
                 tempSaleList.Add(product);
 
                 BindProductList();
                 Clear();
-            }
 
-            txtboxFinalTotalPrice.Text = GetFinalAmount().ToString();
+                txtboxFinalTotalPrice.Text = GetFinalAmount().ToString();
+
+
+                // Calculate remaining amount
+                decimal finalTotalPrice = decimal.Parse(txtboxFinalTotalPrice.Text);
+                decimal amountRemain = finalTotalPrice - 0;
+                txtboxAmountRemain.Text = amountRemain.ToString();
+            }
         }
 
+        private decimal GetDiscountOrDefault(string discountText)
+        {
+            if (decimal.TryParse(discountText, out decimal discount))
+            {
+                return discount;
+            }
+            return 0; // Return 0 if the discount is not provided or invalid
+        }
+
+        // Need to modify to delete
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dgvSale.SelectedRows.Count > 0)
@@ -224,22 +252,23 @@ namespace BookStore_Application
                 return;
             }
 
-            Sale sale = new Sale();
-
-            sale.SaleId = GetLatestInvoiceId() + 1;
-            sale.Employee = db.Employees
-                                .Where(emp => emp.EmployeeName == employeeName)
-                                .FirstOrDefault();
-            sale.Customer = db.Customers
-                                .Where(cus => cus.CustomerName == customerName)
-                                .FirstOrDefault();
-            sale.TotalAmount = GetTotalAmount();
-            sale.TotalDiscount = decimal.Parse(txtDiscount.Text);
-            sale.FinalAmount = decimal.Parse(txtboxFinalTotalPrice.Text);
-            sale.AmountPaid = decimal.Parse(txtboxAmountPaid.Text); // Need to modify show in Text task box 
-            sale.AmountRemain = decimal.Parse(txtboxAmountRemain.Text); // Need to modify show in Text task box 
-            sale.Created = DateTime.Now;
-            sale.Updated = DateTime.Now;
+            Sale sale = new Sale()
+            {
+                SaleId = GetLatestInvoiceId() + 1,
+                Employee = db.Employees
+                    .Where(emp => emp.EmployeeName == employeeName)
+                    .FirstOrDefault(),
+                Customer = db.Customers
+                    .Where(cus => cus.CustomerName == customerName)
+                    .FirstOrDefault(),
+                TotalAmount = GetTotalAmount(),
+                TotalDiscount = GetDiscountOrDefault(txtDiscount.Text),
+                FinalAmount = decimal.Parse(txtboxFinalTotalPrice.Text),
+                AmountPaid = decimal.Parse(txtboxAmountPaid.Text), 
+                AmountRemain = decimal.Parse(txtboxAmountRemain.Text), 
+                Created = DateTime.Now,
+                Updated = DateTime.Now
+            };
 
             db.Sales.Add(sale);
             db.SaveChanges();
@@ -277,9 +306,19 @@ namespace BookStore_Application
                 db.SaleDetails.Add(sd);
                 db.SaveChanges();
             }
+
+            // When clicking on save to sale detail, booking should be deleted from db.Booking & db.BookingDetail
+            int bookingId;
+            if (int.TryParse(txtInvoice.Text, out bookingId))
+            {
+                DeleteBooking(bookingId);
+            }
+
+
             MainClear();
-            MessageBox.Show("Add Complete!");
+            MessageBox.Show("Sale Complete!");
         }
+
         private void BindProductList()
         {
             dgvSale.Rows.Clear();
@@ -293,7 +332,8 @@ namespace BookStore_Application
                     product.TotalPrice,
                     product.DiscountPercentage,
                     product.Discount,
-                    product.FinalPrice);
+                    product.FinalPrice
+                    );
                 rowCount++;
             }
         }
@@ -331,6 +371,9 @@ namespace BookStore_Application
                 txtInvoice.Text = invoiceId.ToString();
                 cmbCustomer.Text = sale.Customer.CustomerName;
                 cmbEmployee.Text = sale.Employee.EmployeeName;
+                txtboxFinalTotalPrice.Text = sale.FinalAmount.ToString();
+                txtboxAmountPaid.Text = sale.AmountPaid.ToString();
+                txtboxAmountRemain.Text = sale.AmountRemain.ToString();
 
                 // add data to gridview
 
@@ -365,7 +408,6 @@ namespace BookStore_Application
             MainClear();
         }
 
-        // Not Fixed for Amount Paid
         private void txtboxAmountPaid_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtboxAmountPaid.Text) ||
@@ -381,12 +423,57 @@ namespace BookStore_Application
             txtboxAmountRemain.Text = amountRemain.ToString();
         }
 
-        // Get Booking new booking list
-        private void button1_Click(object sender, EventArgs e) 
+        private void button1_Click(object sender, EventArgs e)
         {
             BookingListForBS bookingList = new BookingListForBS();
             bookingList.bookSystembtn = this;
             bookingList.Show();
+        }
+
+        public void LoadDataFromBooking(int invoiceId)
+        {
+            MainClear();
+
+            Booking booking = db.Bookings
+                        .Where(s => s.BookingId == invoiceId)
+                        .FirstOrDefault();
+            if (booking != null)
+            {
+                txtInvoice.Text = booking.BookingId.ToString(); // Ensure this sets the booking ID correctly
+                cmbCustomer.Text = booking.Customer.CustomerName;
+                cmbEmployee.Text = booking.Employee.EmployeeName;
+                txtboxFinalTotalPrice.Text = booking.FinalAmount.ToString();
+                txtboxAmountPaid.Text = booking.AmountPaid.ToString();
+                txtboxAmountRemain.Text = booking.AmountRemain.ToString();
+
+
+                //add data to gridview
+                var bookingDetails = db.BookingDetails
+                                    .Where(sd => sd.BookingId == invoiceId);
+                foreach (BookingDetail bd in bookingDetails)
+                {
+                    ClsTempSale tempProduct = new ClsTempSale
+                    {
+                        Name = bd.Book.Title,
+                        Quantity = bd.Quantity,
+                        SellingPrice = bd.Book.SellingPrice,
+                        TotalPrice = bd.TotalPrice,
+                        DiscountPercentage = bd.DiscountPercentage,
+                        Discount = bd.Discount,
+                        FinalPrice = bd.FinalPrice
+                    };
+
+                    tempSaleList.Add(tempProduct);
+                }
+
+                BindProductList();
+            }
+        }
+
+        // When Employee Click on the txtBoxAmountPaid it will be ready for input
+        private void txtboxAmountPaid_Click(object sender, EventArgs e)
+        {
+            txtboxAmountPaid.Text= "";
         }
     }
 }

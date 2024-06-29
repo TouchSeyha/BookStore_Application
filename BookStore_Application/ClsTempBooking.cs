@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookStore_Application
 {
-    public class ClsTempSale
+    public class ClsTempBooking
     {
         public string Name { get; set; }
         public decimal SellingPrice { get; set; }
@@ -16,13 +16,13 @@ namespace BookStore_Application
         public decimal Discount { get; set; }
         public decimal FinalPrice { get; set; }
 
-        public ClsTempSale()
+        public ClsTempBooking()
         {
 
         }
 
-        public ClsTempSale(string name, decimal sellingPrice, int quantity, decimal totalPrice, 
-                            decimal discountPercentage,decimal discount,decimal finalPrice)
+        public ClsTempBooking(string name, decimal sellingPrice, int quantity, decimal totalPrice,
+                            decimal discountPercentage, decimal discount, decimal finalPrice)
         {
             Name = name;
             SellingPrice = sellingPrice;

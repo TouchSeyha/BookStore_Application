@@ -90,7 +90,7 @@
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Book";
+            this.Column3.HeaderText = "Book ID";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
@@ -126,7 +126,7 @@
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "Discount";
+            this.Column8.HeaderText = "Discount Price";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 

@@ -85,6 +85,7 @@
     <Compile Include="BookListDataforSale.Designer.cs">
       <DependentUpon>BookListDataforSale.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClsTempBooking.cs" />
     <Compile Include="ClsTempPurchase.cs" />
     <Compile Include="ClsTemProduct.cs" />
     <Compile Include="ClsTempSale.cs" />

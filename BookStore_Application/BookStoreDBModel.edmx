@@ -147,7 +147,7 @@
           <Property Name="EmployeeId" Type="int" Nullable="false" />
           <Property Name="CustomerId" Type="int" Nullable="false" />
           <Property Name="TotalAmount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-          <Property Name="TotalDiscount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="TotalDiscount" Type="decimal" Precision="10" Scale="2" />
           <Property Name="FinalAmount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="AmountPaid" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="AmountRemain" Type="decimal" Precision="10" Scale="2" Nullable="false" />
@@ -646,7 +646,7 @@
           <Property Name="EmployeeId" Type="Int32" Nullable="false" />
           <Property Name="CustomerId" Type="Int32" Nullable="false" />
           <Property Name="TotalAmount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
-          <Property Name="TotalDiscount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="TotalDiscount" Type="Decimal" Precision="10" Scale="2" />
           <Property Name="FinalAmount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="AmountPaid" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="AmountRemain" Type="Decimal" Precision="10" Scale="2" Nullable="false" />

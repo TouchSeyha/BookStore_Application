@@ -24,7 +24,7 @@ namespace BookStore_Application
         public int EmployeeId { get; set; }
         public int CustomerId { get; set; }
         public decimal TotalAmount { get; set; }
-        public decimal TotalDiscount { get; set; }
+        public Nullable<decimal> TotalDiscount { get; set; }
         public decimal FinalAmount { get; set; }
         public decimal AmountPaid { get; set; }
         public decimal AmountRemain { get; set; }
