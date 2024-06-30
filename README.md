@@ -27,7 +27,7 @@ This project is a BookStore application designed to manage various aspects of a 
 
 ### Additional Screenshots
 
-<div style="display: flex; flex-wrap: wrap;">
+<div align="center">
     <div style="flex: 33.33%; padding: 5px;">
         <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/7ab3c288-3c91-4be9-8f0a-9828d213e6d8" alt="Author Entry" style="max-width: 100%; height: auto;">
     </div>
