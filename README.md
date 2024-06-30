@@ -7,7 +7,7 @@ This project is a BookStore application designed to manage various aspects of a 
 ## Some Screenshots
 
 ### Login Page
-![Screenshot 2024-06-30 174320](https://github.com/TouchSeyha/BookStore_Application/assets/126103757/ac6fd678-2bef-4179-b58c-7931afe90298)
+<img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/ac6fd678-2bef-4179-b58c-7931afe90298" alt="Login Page" width="500">
 
 ### Main Menu
 ![Main Menu](https://github.com/TouchSeyha/BookStore_Application/assets/126103757/fafd3f9b-b311-44b7-b6d7-8ed72a89638d)
@@ -28,27 +28,14 @@ This project is a BookStore application designed to manage various aspects of a 
 ### Additional Screenshots
 
 <div align="center">
-    <div style="flex: 33.33%; padding: 5px;">
-        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/7ab3c288-3c91-4be9-8f0a-9828d213e6d8" alt="Author Entry" style="max-width: 100%; height: auto;">
-    </div>
-    <div style="flex: 33.33%; padding: 5px;">
-        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/ec5ed224-15ec-4a23-9680-974b2811a9d2" alt="Book Entry" style="max-width: 100%; height: auto;">
-    </div>
-    <div style="flex: 33.33%; padding: 5px;">
-        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/b74ed3fe-184f-417d-aec3-1492f2ec6ea5" alt="Genre Entry" style="max-width: 100%; height: auto;">
-    </div>
+        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/7ab3c288-3c91-4be9-8f0a-9828d213e6d8" alt="Author Entry"  width="500" >
+        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/b74ed3fe-184f-417d-aec3-1492f2ec6ea5" alt="Genre Entry"  width="500" >
+        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/7a86c27f-6ae7-4967-b10c-d2ff485777dc" alt="Publish House Entry" width="500">
 </div>
 
-<div style="display: flex; flex-wrap: wrap;">
-    <div style="flex: 33.33%; padding: 5px;">
-        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/7a86c27f-6ae7-4967-b10c-d2ff485777dc" alt="Publish House Entry" style="max-width: 100%; height: auto;">
-    </div>
-    <div style="flex: 33.33%; padding: 5px;">
-        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/a1e61c80-ecf1-46ef-b7c0-f5704cda942f" alt="Stock Entry" style="max-width: 100%; height: auto;">
-    </div>
-    <div style="flex: 33.33%; padding: 5px;">
-        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/6efbec77-17fb-4a70-a596-eb7d2d574e75" alt="Supplier Entry" style="max-width: 100%; height: auto;">
-    </div>
+<div align="center">
+        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/a1e61c80-ecf1-46ef-b7c0-f5704cda942f" alt="Stock Entry" width="500">
+        <img src="https://github.com/TouchSeyha/BookStore_Application/assets/126103757/6efbec77-17fb-4a70-a596-eb7d2d574e75" alt="Supplier Entry" width="500">
 </div>
 
 
