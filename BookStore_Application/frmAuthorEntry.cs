@@ -73,6 +73,7 @@ namespace BookStore_Application
             {
                 txtAuthorId.Text = author.AuthorId.ToString();
                 txtAuthorName.Text = author.AuthorName.ToString();
+                txtAuthorAge.Text = author.Age.ToString();
             }
         }
 

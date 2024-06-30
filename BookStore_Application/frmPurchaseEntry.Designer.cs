@@ -313,7 +313,7 @@
             this.panel4.Controls.Add(this.btnSave);
             this.panel4.Controls.Add(this.btnGetData);
             this.panel4.Location = new System.Drawing.Point(1098, 93);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(501, 289);
             this.panel4.TabIndex = 100;
@@ -322,7 +322,7 @@
             // 
             this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiscount.Location = new System.Drawing.Point(196, 212);
-            this.txtDiscount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiscount.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(250, 32);
             this.txtDiscount.TabIndex = 94;
@@ -373,7 +373,7 @@
             // 
             this.txtTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalPrice.Location = new System.Drawing.Point(196, 168);
-            this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.Size = new System.Drawing.Size(250, 32);
             this.txtTotalPrice.TabIndex = 90;
@@ -383,7 +383,7 @@
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantity.Location = new System.Drawing.Point(196, 127);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(250, 32);
             this.txtQuantity.TabIndex = 89;
@@ -393,7 +393,7 @@
             // 
             this.txtSellingprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSellingprice.Location = new System.Drawing.Point(196, 81);
-            this.txtSellingprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSellingprice.Margin = new System.Windows.Forms.Padding(2);
             this.txtSellingprice.Name = "txtSellingprice";
             this.txtSellingprice.Size = new System.Drawing.Size(250, 32);
             this.txtSellingprice.TabIndex = 88;
@@ -404,7 +404,7 @@
             this.txtBookTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBookTitle.ForeColor = System.Drawing.Color.Chartreuse;
             this.txtBookTitle.Location = new System.Drawing.Point(196, 40);
-            this.txtBookTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBookTitle.Margin = new System.Windows.Forms.Padding(2);
             this.txtBookTitle.Name = "txtBookTitle";
             this.txtBookTitle.ReadOnly = true;
             this.txtBookTitle.Size = new System.Drawing.Size(250, 32);
@@ -417,7 +417,7 @@
             this.txtboxFinalTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxFinalTotalPrice.ForeColor = System.Drawing.Color.Chartreuse;
             this.txtboxFinalTotalPrice.Location = new System.Drawing.Point(19, 50);
-            this.txtboxFinalTotalPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxFinalTotalPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxFinalTotalPrice.Name = "txtboxFinalTotalPrice";
             this.txtboxFinalTotalPrice.ReadOnly = true;
             this.txtboxFinalTotalPrice.Size = new System.Drawing.Size(366, 38);
@@ -445,7 +445,7 @@
             this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(0, 93);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(685, 289);
             this.panel2.TabIndex = 98;
@@ -476,7 +476,7 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.txtboxFinalTotalPrice);
             this.panel3.Location = new System.Drawing.Point(689, 93);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(405, 289);
             this.panel3.TabIndex = 99;
@@ -501,7 +501,7 @@
             this.txtboxAmountRemain.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxAmountRemain.ForeColor = System.Drawing.Color.Orange;
             this.txtboxAmountRemain.Location = new System.Drawing.Point(19, 232);
-            this.txtboxAmountRemain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxAmountRemain.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxAmountRemain.Name = "txtboxAmountRemain";
             this.txtboxAmountRemain.ReadOnly = true;
             this.txtboxAmountRemain.Size = new System.Drawing.Size(366, 38);
@@ -528,7 +528,7 @@
             this.txtboxAmountPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxAmountPaid.ForeColor = System.Drawing.Color.Yellow;
             this.txtboxAmountPaid.Location = new System.Drawing.Point(19, 137);
-            this.txtboxAmountPaid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxAmountPaid.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxAmountPaid.Name = "txtboxAmountPaid";
             this.txtboxAmountPaid.Size = new System.Drawing.Size(366, 38);
             this.txtboxAmountPaid.TabIndex = 87;
@@ -624,7 +624,7 @@
             this.cmbEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEmployee.FormattingEnabled = true;
             this.cmbEmployee.Location = new System.Drawing.Point(1141, 30);
-            this.cmbEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEmployee.Name = "cmbEmployee";
             this.cmbEmployee.Size = new System.Drawing.Size(241, 30);
             this.cmbEmployee.TabIndex = 14;
@@ -634,7 +634,7 @@
             this.cmbCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCustomer.FormattingEnabled = true;
             this.cmbCustomer.Location = new System.Drawing.Point(689, 30);
-            this.cmbCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCustomer.Name = "cmbCustomer";
             this.cmbCustomer.Size = new System.Drawing.Size(241, 30);
             this.cmbCustomer.TabIndex = 13;
@@ -643,7 +643,7 @@
             // 
             this.txtInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInvoice.Location = new System.Drawing.Point(363, 32);
-            this.txtInvoice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtInvoice.Margin = new System.Windows.Forms.Padding(2);
             this.txtInvoice.Name = "txtInvoice";
             this.txtInvoice.ReadOnly = true;
             this.txtInvoice.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -679,7 +679,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "frmPurchaseEntry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPurchaseEntry";
+            this.Text = "PurchaseEntry";
             this.Load += new System.EventHandler(this.frmPurchaseEntry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
             this.panel4.ResumeLayout(false);

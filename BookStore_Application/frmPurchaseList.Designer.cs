@@ -46,8 +46,9 @@
             this.dgvPurchase.AllowUserToAddRows = false;
             this.dgvPurchase.AllowUserToDeleteRows = false;
             this.dgvPurchase.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvPurchase.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvPurchase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPurchase.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvPurchase.ColumnHeadersHeight = 30;
+            this.dgvPurchase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvPurchase.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -59,7 +60,7 @@
             this.Column10,
             this.Column11});
             this.dgvPurchase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPurchase.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvPurchase.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.dgvPurchase.Location = new System.Drawing.Point(0, 0);
             this.dgvPurchase.Margin = new System.Windows.Forms.Padding(1);
             this.dgvPurchase.Name = "dgvPurchase";
@@ -142,7 +143,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPurchaseList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPurchaseList";
+            this.Text = "PurchaseList";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPurchaseList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPurchase)).EndInit();

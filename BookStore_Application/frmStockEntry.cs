@@ -92,7 +92,7 @@ namespace BookStore_Application
             int stockId = int.Parse(txtStockId.Text);
             int bookId = int.Parse(txtBookId.Text);
             int Quantity = int.Parse(txtQuantity.Text);
-
+            
             var stock = db.Stocks
                             .Where(c => c.StockId == stockId)
                             .FirstOrDefault();
@@ -132,6 +132,10 @@ namespace BookStore_Application
 
                 Clear();
             }
+            else
+            {
+                MessageBox.Show("Stock ID or Book ID not found!");
+            }
         }
 
         private void btnGetData_Click(object sender, EventArgs e)
@@ -149,6 +153,16 @@ namespace BookStore_Application
             bookList.StockEntry = this;
             bookList.ShowDialog();
 
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+                pictureBox1.BackColor = Color.LightBlue;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.FromArgb(6, 17, 23);
         }
     }
 }

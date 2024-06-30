@@ -48,8 +48,9 @@
             this.dgvBook.AllowUserToAddRows = false;
             this.dgvBook.AllowUserToDeleteRows = false;
             this.dgvBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBook.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBook.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvBook.ColumnHeadersHeight = 30;
+            this.dgvBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -63,7 +64,7 @@
             this.Column10,
             this.Column11});
             this.dgvBook.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvBook.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.dgvBook.Location = new System.Drawing.Point(0, 0);
             this.dgvBook.Margin = new System.Windows.Forms.Padding(1);
             this.dgvBook.Name = "dgvBook";
@@ -147,7 +148,7 @@
             this.ClientSize = new System.Drawing.Size(1842, 970);
             this.Controls.Add(this.dgvBook);
             this.Name = "frmBookList";
-            this.Text = "frmBookList";
+            this.Text = "BookList";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmBookList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).EndInit();

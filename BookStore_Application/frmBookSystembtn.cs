@@ -154,14 +154,6 @@ namespace BookStore_Application
             }
         }
 
-        private void btnShowBookId_Click(object sender, EventArgs e)
-        {
-            BookListDataforSale purchaseList = new BookListDataforSale();
-
-            purchaseList.bookSystembtn = this;
-            purchaseList.ShowDialog();
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtBookTitle.Text))
@@ -243,12 +235,19 @@ namespace BookStore_Application
         {
             string customerName = cmbCustomer.Text;
             string employeeName = cmbEmployee.Text;
+            string amountPaid = txtboxAmountPaid.Text;
 
             if (string.IsNullOrEmpty(customerName) ||
                 string.IsNullOrEmpty(employeeName) ||
                 dgvSale.Rows.Count <= 0)
             {
                 MessageBox.Show("Please Select Customer and Employee!");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(amountPaid))
+            {
+                MessageBox.Show("Amount Paid must not be null!");
                 return;
             }
 
@@ -474,6 +473,14 @@ namespace BookStore_Application
         private void txtboxAmountPaid_Click(object sender, EventArgs e)
         {
             txtboxAmountPaid.Text= "";
+        }
+
+        private void bookStorage_Click(object sender, EventArgs e)
+        {
+            BookListDataforSale purchaseList = new BookListDataforSale();
+
+            purchaseList.bookSystembtn = this;
+            purchaseList.ShowDialog();
         }
     }
 }

@@ -38,19 +38,23 @@
             // 
             // dgvGenre
             // 
+            this.dgvGenre.AllowUserToAddRows = false;
+            this.dgvGenre.AllowUserToDeleteRows = false;
             this.dgvGenre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvGenre.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvGenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGenre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvGenre.ColumnHeadersHeight = 30;
+            this.dgvGenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvGenre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column10,
             this.Column11});
             this.dgvGenre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGenre.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvGenre.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.dgvGenre.Location = new System.Drawing.Point(0, 0);
             this.dgvGenre.Margin = new System.Windows.Forms.Padding(1);
             this.dgvGenre.Name = "dgvGenre";
+            this.dgvGenre.ReadOnly = true;
             this.dgvGenre.RowHeadersWidth = 123;
             this.dgvGenre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvGenre.Size = new System.Drawing.Size(1513, 764);
@@ -61,21 +65,25 @@
             // 
             this.Column1.HeaderText = "Genre ID";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Genre Name";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column10
             // 
             this.Column10.HeaderText = "Created";
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "Updated";
             this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // frmGenreList
             // 

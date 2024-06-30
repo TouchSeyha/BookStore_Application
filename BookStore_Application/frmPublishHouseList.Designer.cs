@@ -40,9 +40,12 @@
             // 
             // dgvPublish
             // 
+            this.dgvPublish.AllowUserToAddRows = false;
+            this.dgvPublish.AllowUserToDeleteRows = false;
             this.dgvPublish.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvPublish.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvPublish.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPublish.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvPublish.ColumnHeadersHeight = 30;
+            this.dgvPublish.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvPublish.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -51,10 +54,11 @@
             this.Column10,
             this.Column11});
             this.dgvPublish.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPublish.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvPublish.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.dgvPublish.Location = new System.Drawing.Point(0, 0);
             this.dgvPublish.Margin = new System.Windows.Forms.Padding(1);
             this.dgvPublish.Name = "dgvPublish";
+            this.dgvPublish.ReadOnly = true;
             this.dgvPublish.RowHeadersWidth = 123;
             this.dgvPublish.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPublish.Size = new System.Drawing.Size(1850, 1126);

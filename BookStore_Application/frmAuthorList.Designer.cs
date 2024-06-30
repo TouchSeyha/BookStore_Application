@@ -39,9 +39,12 @@
             // 
             // dgvAuthor
             // 
+            this.dgvAuthor.AllowUserToAddRows = false;
+            this.dgvAuthor.AllowUserToDeleteRows = false;
             this.dgvAuthor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAuthor.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvAuthor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAuthor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvAuthor.ColumnHeadersHeight = 30;
+            this.dgvAuthor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvAuthor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -49,10 +52,11 @@
             this.Column4,
             this.Column5});
             this.dgvAuthor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAuthor.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvAuthor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.dgvAuthor.Location = new System.Drawing.Point(0, 0);
             this.dgvAuthor.Margin = new System.Windows.Forms.Padding(1);
             this.dgvAuthor.Name = "dgvAuthor";
+            this.dgvAuthor.ReadOnly = true;
             this.dgvAuthor.RowHeadersWidth = 123;
             this.dgvAuthor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAuthor.Size = new System.Drawing.Size(1839, 900);
@@ -63,26 +67,31 @@
             // 
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "AUTHOR NAME";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "AGE";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "CREATED";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "UPDATED";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // frmAuthorList
             // 

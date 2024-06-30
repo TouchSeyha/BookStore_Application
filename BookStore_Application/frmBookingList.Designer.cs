@@ -43,8 +43,9 @@
             this.dgvBooking.AllowUserToAddRows = false;
             this.dgvBooking.AllowUserToDeleteRows = false;
             this.dgvBooking.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBooking.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvBooking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBooking.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvBooking.ColumnHeadersHeight = 30;
+            this.dgvBooking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvBooking.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -108,7 +109,7 @@
             this.Controls.Add(this.dgvBooking);
             this.Name = "frmBookingList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmBookingList";
+            this.Text = "BookingList";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmBookingList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooking)).EndInit();

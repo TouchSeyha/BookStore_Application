@@ -230,7 +230,7 @@ namespace BookStore_Application
 
             if(string.IsNullOrEmpty(amountPaid))
             {
-                MessageBox.Show("Please Input Amount Paid!");
+                MessageBox.Show("Amount Paid must not be null!");
                 return;
             }
 

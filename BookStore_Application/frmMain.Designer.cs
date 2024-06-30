@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.authorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,7 +82,7 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(80, 2, 0, 2);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(100, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.Size = new System.Drawing.Size(1100, 85);
             this.menuStrip1.TabIndex = 0;
@@ -319,41 +320,45 @@
             this.btnStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
             this.btnStock.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.btnStock.ForeColor = System.Drawing.Color.White;
-            this.btnStock.Image = global::BookStore_Application.Properties.Resources.icons8_hangar_481;
+            this.btnStock.Image = global::BookStore_Application.Properties.Resources.icons8_warehouse_96;
             this.btnStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStock.Location = new System.Drawing.Point(727, 176);
             this.btnStock.Name = "btnStock";
             this.btnStock.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnStock.Size = new System.Drawing.Size(329, 146);
             this.btnStock.TabIndex = 4;
-            this.btnStock.Text = "            STOCK";
+            this.btnStock.Text = "                  STOCK";
             this.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStock.UseVisualStyleBackColor = false;
             this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
+            this.btnStock.MouseLeave += new System.EventHandler(this.btnStock_MouseLeave);
+            this.btnStock.MouseHover += new System.EventHandler(this.btnStock_MouseHover);
             // 
             // btnPurchase
             // 
             this.btnPurchase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
             this.btnPurchase.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Image = global::BookStore_Application.Properties.Resources.icons8_purchase_48;
+            this.btnPurchase.Image = global::BookStore_Application.Properties.Resources.icons8_grocery_store_961;
             this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPurchase.Location = new System.Drawing.Point(41, 176);
             this.btnPurchase.Name = "btnPurchase";
             this.btnPurchase.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnPurchase.Size = new System.Drawing.Size(329, 146);
             this.btnPurchase.TabIndex = 4;
-            this.btnPurchase.Text = "            PURCHASE";
+            this.btnPurchase.Text = "                PURCHASE";
             this.btnPurchase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPurchase.UseVisualStyleBackColor = false;
             this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
+            this.btnPurchase.MouseLeave += new System.EventHandler(this.btnPurchase_MouseLeave);
+            this.btnPurchase.MouseHover += new System.EventHandler(this.btnPurchase_MouseHover);
             // 
             // btnBooking
             // 
             this.btnBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
             this.btnBooking.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.btnBooking.ForeColor = System.Drawing.Color.White;
-            this.btnBooking.Image = global::BookStore_Application.Properties.Resources.icons8_billing_machine_961;
+            this.btnBooking.Image = global::BookStore_Application.Properties.Resources.icons8_add_basket_96;
             this.btnBooking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBooking.Location = new System.Drawing.Point(384, 176);
             this.btnBooking.Name = "btnBooking";
@@ -364,13 +369,15 @@
             this.btnBooking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBooking.UseVisualStyleBackColor = false;
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
+            this.btnBooking.MouseLeave += new System.EventHandler(this.btnBooking_MouseLeave);
+            this.btnBooking.MouseHover += new System.EventHandler(this.btnBooking_MouseHover);
             // 
             // btnPos
             // 
-            this.btnPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(69)))));
+            this.btnPos.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnPos.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.btnPos.ForeColor = System.Drawing.Color.White;
-            this.btnPos.Image = global::BookStore_Application.Properties.Resources.icons8_grocery_store_96;
+            this.btnPos.Image = global::BookStore_Application.Properties.Resources.icons8_cash_register_96;
             this.btnPos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPos.Location = new System.Drawing.Point(384, 353);
             this.btnPos.Name = "btnPos";
@@ -381,16 +388,18 @@
             this.btnPos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPos.UseVisualStyleBackColor = false;
             this.btnPos.Click += new System.EventHandler(this.btnPos_Click);
+            this.btnPos.MouseLeave += new System.EventHandler(this.btnPos_MouseLeave);
+            this.btnPos.MouseHover += new System.EventHandler(this.btnPos_MouseHover);
             // 
             // btnCloseMain
             // 
             this.btnCloseMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCloseMain.BackColor = System.Drawing.Color.Firebrick;
+            this.btnCloseMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(57)))), ((int)(((byte)(4)))));
             this.btnCloseMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnCloseMain.Image = global::BookStore_Application.Properties.Resources.icons8_log_out_481;
-            this.btnCloseMain.Location = new System.Drawing.Point(0, 593);
+            this.btnCloseMain.Location = new System.Drawing.Point(0, 634);
             this.btnCloseMain.Name = "btnCloseMain";
-            this.btnCloseMain.Size = new System.Drawing.Size(88, 64);
+            this.btnCloseMain.Size = new System.Drawing.Size(82, 61);
             this.btnCloseMain.TabIndex = 3;
             this.btnCloseMain.UseVisualStyleBackColor = false;
             this.btnCloseMain.Click += new System.EventHandler(this.btnCloseMain_Click);
@@ -401,7 +410,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1100, 657);
+            this.ClientSize = new System.Drawing.Size(1100, 695);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
@@ -411,10 +420,12 @@
             this.Controls.Add(this.btnPos);
             this.Controls.Add(this.btnCloseMain);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(1116, 696);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Book Main";
+            this.Text = "Book MainMenu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -457,5 +468,6 @@
         private System.Windows.Forms.ToolStripMenuItem purchaseDetailsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem saleDetailsToolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

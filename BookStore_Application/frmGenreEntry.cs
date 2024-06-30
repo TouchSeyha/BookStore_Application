@@ -76,20 +76,7 @@ namespace BookStore_Application
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int genreId = int.Parse(txtGenreId.Text);
-            string genreName = txtGenreName.Text;
 
-            var genre = db.Genres
-                            .Where(c => c.GenreId == genreId)
-                            .FirstOrDefault();
-            if (genre != null)
-            {
-                genre.GenreName = genreName;
-                genre.Updated = DateTime.Now;
-                db.SaveChanges();
-                MessageBox.Show("Update Successfully!");
-                Clear();
-            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

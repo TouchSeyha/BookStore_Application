@@ -147,5 +147,45 @@ namespace BookStore_Application
             frmSaleDetail frmSaleDetail = new frmSaleDetail();
             frmSaleDetail.Show();
         }
+
+        private void btnPurchase_MouseHover(object sender, EventArgs e)
+        {
+            btnPurchase.BackColor = Color.LightGreen;
+        }
+
+        private void btnPurchase_MouseLeave(object sender, EventArgs e)
+        {
+            btnPurchase.BackColor = Color.FromArgb(18, 52, 69);
+        }
+
+        private void btnBooking_MouseHover(object sender, EventArgs e)
+        {
+            btnBooking.BackColor = Color.LightGreen;
+        }
+
+        private void btnBooking_MouseLeave(object sender, EventArgs e)
+        {
+            btnBooking.BackColor = Color.FromArgb(18, 52, 69);
+        }
+
+        private void btnStock_MouseHover(object sender, EventArgs e)
+        {
+            btnStock.BackColor = Color.LightGreen;
+        }
+
+        private void btnStock_MouseLeave(object sender, EventArgs e)
+        {
+            btnStock.BackColor = Color.FromArgb(18, 52, 69);
+        }
+
+        private void btnPos_MouseHover(object sender, EventArgs e)
+        {
+            btnPos.BackColor = Color.LightGreen;
+        }
+
+        private void btnPos_MouseLeave(object sender, EventArgs e)
+        {
+            btnPos.BackColor = Color.MediumOrchid;
+        }
     }
 }

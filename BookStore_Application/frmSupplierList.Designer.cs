@@ -40,9 +40,12 @@
             // 
             // dgvSupplier
             // 
+            this.dgvSupplier.AllowUserToAddRows = false;
+            this.dgvSupplier.AllowUserToDeleteRows = false;
             this.dgvSupplier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSupplier.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSupplier.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvSupplier.ColumnHeadersHeight = 30;
+            this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -51,10 +54,11 @@
             this.Column10,
             this.Column11});
             this.dgvSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSupplier.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.dgvSupplier.Location = new System.Drawing.Point(0, 0);
             this.dgvSupplier.Margin = new System.Windows.Forms.Padding(1);
             this.dgvSupplier.Name = "dgvSupplier";
+            this.dgvSupplier.ReadOnly = true;
             this.dgvSupplier.RowHeadersWidth = 123;
             this.dgvSupplier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSupplier.Size = new System.Drawing.Size(1849, 1077);
@@ -65,31 +69,37 @@
             // 
             this.Column1.HeaderText = "Supplier ID";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Supplier Name";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Phone";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Address";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column10
             // 
             this.Column10.HeaderText = "Created";
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "Updated";
             this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // frmSupplierList
             // 
@@ -99,7 +109,7 @@
             this.Controls.Add(this.dgvSupplier);
             this.Name = "frmSupplierList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSupplierList";
+            this.Text = "SupplierList";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmSupplierList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();

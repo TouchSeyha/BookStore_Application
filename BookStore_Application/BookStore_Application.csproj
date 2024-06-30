@@ -313,6 +313,26 @@
       <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
       <LastGenOutput>BookStoreDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-save-all-96.png" />
+    <None Include="Resources\icons8-new-80.png" />
+    <None Include="Resources\icons8-new-40.png" />
+    <None Include="Resources\icons8-save-48 %282%29.png" />
+    <None Include="Resources\icons8-save-48 %281%29.png" />
+    <None Include="Resources\icons8-view-48.png" />
+    <None Include="Resources\icons8-erase-48.png" />
+    <None Include="Resources\icons8-plus-48.png" />
+    <None Include="Resources\icons8-add-basket-961.png" />
+    <None Include="Resources\icons8-Employee-48.png" />
+    <None Include="Resources\icons8-male-user-481.png" />
+    <None Include="Resources\icons8-receipt-48.png" />
+    <None Include="Resources\icons8-receipt-96 %281%29.png" />
+    <None Include="Resources\icons8-bookmark-481.png" />
+    <None Include="Resources\icons8-bookmark-48.png" />
+    <None Include="Resources\icons8-trash-48.png" />
+    <None Include="Resources\icons8-warehouse-96.png" />
+    <None Include="Resources\icons8-add-basket-96.png" />
+    <None Include="Resources\icons8-grocery-store-961.png" />
+    <None Include="Resources\icons8-cash-register-96.png" />
     <None Include="Resources\icons8-grocery-store-96.png" />
     <None Include="Resources\icons8-billing-machine-961.png" />
     <None Include="Resources\icons8-purchase-96.png" />

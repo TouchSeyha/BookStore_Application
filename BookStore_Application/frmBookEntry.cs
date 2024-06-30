@@ -66,11 +66,6 @@ namespace BookStore_Application
             }
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            Clear();
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Book book = new Book();
@@ -150,6 +145,11 @@ namespace BookStore_Application
 
             bookList.bookEntry = this;
             bookList.Show();
+        }
+
+        private void btnTrash_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }

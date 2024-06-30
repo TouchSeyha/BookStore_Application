@@ -49,8 +49,9 @@
             this.dgvSale.AllowUserToAddRows = false;
             this.dgvSale.AllowUserToDeleteRows = false;
             this.dgvSale.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSale.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSale.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.dgvSale.ColumnHeadersHeight = 30;
+            this.dgvSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvSale.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column11,
             this.Column1,
@@ -65,7 +66,7 @@
             this.Column6,
             this.Column10});
             this.dgvSale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSale.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvSale.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.dgvSale.Location = new System.Drawing.Point(0, 0);
             this.dgvSale.Margin = new System.Windows.Forms.Padding(1);
             this.dgvSale.Name = "dgvSale";
@@ -156,7 +157,7 @@
             this.Controls.Add(this.dgvSale);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frmPurchaseDetail";
-            this.Text = "frmPurchaseDetail";
+            this.Text = "PurchaseDetail";
             this.Load += new System.EventHandler(this.frmPurchaseDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
             this.ResumeLayout(false);
