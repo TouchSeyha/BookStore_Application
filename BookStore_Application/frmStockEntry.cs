@@ -56,6 +56,21 @@ namespace BookStore_Application
             }
         }
 
+        public void LoadDataToForm(int stockID) 
+        {
+           
+            var stock = db.Books
+                        .Where(b => b.BookId == stockID)
+                        .FirstOrDefault();
+
+            if( stock != null)
+            {
+
+                txtBookId.Text = stock.BookId.ToString();
+                
+            }
+        }
+
         private void btnNew_Click(object sender, EventArgs e)
         {
             Clear ();
@@ -63,6 +78,14 @@ namespace BookStore_Application
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtBookId.Text) || string.IsNullOrEmpty(txtQuantity.Text))
+            {
+                MessageBox.Show("Please Input every details!");
+                return;
+            }
+                
+
             // Check if the bookid exist
             int bookId = int.Parse(txtBookId.Text);
             if (!db.Books.Any(b => b.BookId == bookId))
@@ -72,10 +95,11 @@ namespace BookStore_Application
             }
 
             Stock stock = new Stock();
+            int Quantity = int.Parse(txtQuantity.Text);
 
             stock.StockId = GetLatestStockId() + 1;
             stock.BookId = int.Parse(txtBookId.Text);
-            stock.Quantity = int.Parse(txtQuantity.Text);
+            Quantity += stock.Quantity;
             stock.Created = DateTime.Now;
             stock.Updated = DateTime.Now;
 
@@ -89,6 +113,14 @@ namespace BookStore_Application
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+
+            if (string.IsNullOrEmpty(txtBookId.Text) || string.IsNullOrEmpty(txtQuantity.Text))
+            {
+                MessageBox.Show("Please Choose a Records to Update!");
+                return;
+            }
+
             int stockId = int.Parse(txtStockId.Text);
             int bookId = int.Parse(txtBookId.Text);
             int Quantity = int.Parse(txtQuantity.Text);
@@ -117,6 +149,14 @@ namespace BookStore_Application
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtBookId.Text) || string.IsNullOrEmpty(txtQuantity.Text))
+            {
+                MessageBox.Show("Please Choose a Records to Delete!");
+                return;
+            }
+
+
             int stId = int.Parse(txtStockId.Text);
 
             var stock = db.Stocks
@@ -148,7 +188,7 @@ namespace BookStore_Application
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmBookList bookList = new frmBookList();
+            AStockFrm bookList = new AStockFrm();
 
             bookList.StockEntry = this;
             bookList.ShowDialog();

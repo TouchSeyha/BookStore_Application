@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BookStore_Application
@@ -36,7 +31,7 @@ namespace BookStore_Application
             txtSellingPrice.Text = "";
             txtNote.Text = "";
         }
-           
+
         private int GetLatestBookId()
         {
             var book = db.Books
@@ -66,15 +61,64 @@ namespace BookStore_Application
             }
         }
 
+        public void LoadDataFrombook(int authorId)
+        {
+            var author = db.Authors
+                            .Where(a => a.AuthorId == authorId)
+                            .FirstOrDefault();
+
+            if (author != null)
+            {
+                txtAuthorId.Text = author.AuthorId.ToString();
+            }
+        }
+
+        public void LoadDataFromGenre(int genreId)
+        {
+            var genre = db.Genres
+                            .Where(a => a.GenreId == genreId)
+                            .FirstOrDefault();
+
+            if (genre != null)
+            {
+                txtGenreId.Text = genre.GenreId.ToString();
+            }
+        }
+
+        public void LoadDataFromPublish(int publishId)
+        {
+
+            var publish = db.PublishingHouses
+                               .Where(p => p.PublishingHouseId == publishId)
+                               .FirstOrDefault();
+
+            if (publish != null)
+            {
+                txtPublishId.Text = publish.PublishingHouseId.ToString();
+            }
+
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtBookId.Text) || string.IsNullOrEmpty(txtAuthorId.Text)
+                || string.IsNullOrEmpty(txtTitle.Text) || string.IsNullOrEmpty(txtPublishId.Text)
+                || string.IsNullOrEmpty(txtGenreId.Text) || string.IsNullOrEmpty(txtCostPrice.Text)
+                || string.IsNullOrEmpty(txtTotalPage.Text) || string.IsNullOrEmpty(txtSellingPrice.Text)
+                )
+            {
+                MessageBox.Show("Please Input every details!");
+                return;
+            }
+           
             Book book = new Book();
 
             book.BookId = GetLatestBookId() + 1;
             book.Title = txtTitle.Text;
-            book.AuthorId = int.Parse(txtBookId.Text);
-            book.PublishingHouseId = int.Parse(txtPublishId.Text);
-            book.GenreId = int.Parse(txtGenreId.Text);
+            book.AuthorId= int.Parse(txtAuthorId.Text);
+            book.PublishingHouseId=int.Parse(txtPublishId.Text);
+            book.GenreId= int.Parse(txtGenreId.Text);
             book.TotalPage = int.Parse(txtTotalPage.Text);
             book.CostPrice = decimal.Parse(txtCostPrice.Text);
             book.SellingPrice = decimal.Parse(txtSellingPrice.Text);
@@ -92,6 +136,17 @@ namespace BookStore_Application
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtBookId.Text) || string.IsNullOrEmpty(txtAuthorId.Text)
+                || string.IsNullOrEmpty(txtTitle.Text) || string.IsNullOrEmpty(txtPublishId.Text)
+                || string.IsNullOrEmpty(txtGenreId.Text) || string.IsNullOrEmpty(txtCostPrice.Text)
+                || string.IsNullOrEmpty(txtTotalPage.Text) || string.IsNullOrEmpty(txtSellingPrice.Text)
+                )
+            {
+                MessageBox.Show("Choose a data to Update!");
+                return;
+            }
+
+
             int bookId = int.Parse(txtBookId.Text);
             string bookTitle = txtTitle.Text;
             string authorId = txtAuthorId.Text;
@@ -124,6 +179,17 @@ namespace BookStore_Application
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtBookId.Text) || string.IsNullOrEmpty(txtAuthorId.Text)
+                || string.IsNullOrEmpty(txtTitle.Text) || string.IsNullOrEmpty(txtPublishId.Text)
+                || string.IsNullOrEmpty(txtGenreId.Text) || string.IsNullOrEmpty(txtCostPrice.Text)
+                || string.IsNullOrEmpty(txtTotalPage.Text) || string.IsNullOrEmpty(txtSellingPrice.Text)
+                )
+            {
+                MessageBox.Show("Please Select a Record to Delete!");
+                return;
+            }
+
             int bookId = int.Parse(txtBookId.Text);
 
             var book = db.Books
@@ -150,6 +216,27 @@ namespace BookStore_Application
         private void btnTrash_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void bookStorage_Click(object sender, EventArgs e)
+        {
+            AuthorListForBookEntry bookEntry = new AuthorListForBookEntry();
+            bookEntry.bookEntry = this;
+            bookEntry.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            PublishListForBookEntry house = new PublishListForBookEntry();
+            house.bookEntry = this;
+            house.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            GenreListForBookEntry bookIn = new GenreListForBookEntry();
+            bookIn.bookEntry = this;
+            bookIn.Show();
         }
     }
 }

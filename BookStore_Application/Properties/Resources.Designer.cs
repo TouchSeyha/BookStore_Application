@@ -183,6 +183,16 @@ namespace BookStore_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bookmark_48__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bookmark-48 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bookmark_481 {
             get {
                 object obj = ResourceManager.GetObject("icons8-bookmark-481", resourceCulture);
@@ -316,6 +326,16 @@ namespace BookStore_Application.Properties {
         internal static System.Drawing.Bitmap icons8_hangar_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-hangar-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hangar_48__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hangar-48 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -526,6 +546,16 @@ namespace BookStore_Application.Properties {
         internal static System.Drawing.Bitmap icons8_scroll_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-scroll-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_supplier_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-supplier-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

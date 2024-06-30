@@ -57,6 +57,13 @@ namespace BookStore_Application
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(txtPublishName.Text) || string.IsNullOrEmpty(txtAddress.Text)
+                || string.IsNullOrEmpty(txtPublishId.Text))
+            {
+                MessageBox.Show("Please Input every details!");
+                return;
+            }
+
             PublishingHouse house = new PublishingHouse();
 
             house.PublishingHouseId = GetLatestPublishId() + 1;
@@ -76,6 +83,13 @@ namespace BookStore_Application
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtPublishName.Text) || string.IsNullOrEmpty(txtAddress.Text)
+                || string.IsNullOrEmpty(txtPublishId.Text))
+            {
+                MessageBox.Show("Please Choose a Record to Update!");
+                return;
+            }
+
             int pbId = int.Parse(txtPublishId.Text);
             string pdName = txtPublishName.Text;
             string pdAddress = txtAddress.Text;
@@ -101,6 +115,13 @@ namespace BookStore_Application
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtPublishName.Text) || string.IsNullOrEmpty(txtAddress.Text)
+                || string.IsNullOrEmpty(txtPublishId.Text))
+            {
+                MessageBox.Show("Please Choose a Record to Delete!");
+                return;
+            }
+
             int pbId = int.Parse(txtPublishId.Text);
 
             var house = db.PublishingHouses

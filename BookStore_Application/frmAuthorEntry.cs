@@ -43,6 +43,12 @@ namespace BookStore_Application
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtAuthorName.Text) || string.IsNullOrEmpty(txtAuthorAge.Text))
+            {
+                MessageBox.Show("Please input every details!");
+                return;
+            }
             Author author = new Author();
 
             author.AuthorId = GetLatestAuthorId() + 1;
@@ -79,6 +85,12 @@ namespace BookStore_Application
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtAuthorName.Text) || string.IsNullOrEmpty(txtAuthorAge.Text))
+            {
+                MessageBox.Show("Choose a data to Update!");
+                return;
+            }
             int authorId = int.Parse(txtAuthorId.Text);
             string authorName = txtAuthorName.Text;
             int authorAge = int.Parse(txtAuthorAge.Text);
@@ -99,6 +111,12 @@ namespace BookStore_Application
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtAuthorName.Text) || string.IsNullOrEmpty(txtAuthorAge.Text))
+            {
+                MessageBox.Show("Please Select a Record to Delete!");
+                return;
+            }
+
             int authorId = int.Parse(txtAuthorId.Text);
 
             var author = db.Authors

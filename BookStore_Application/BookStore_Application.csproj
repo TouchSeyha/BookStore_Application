@@ -58,8 +58,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppManager.cs" />
+    <Compile Include="AStockFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AStockFrm.Designer.cs">
+      <DependentUpon>AStockFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Author.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorListForBookEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorListForBookEntry.Designer.cs">
+      <DependentUpon>AuthorListForBookEntry.cs</DependentUpon>
     </Compile>
     <Compile Include="BookFormForBooking.cs">
       <SubType>Form</SubType>
@@ -254,6 +266,12 @@
     <Compile Include="Genre.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="GenreListForBookEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenreListForBookEntry.Designer.cs">
+      <DependentUpon>GenreListForBookEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,6 +287,12 @@
     </Compile>
     <Compile Include="PublishingHouse.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PublishListForBookEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublishListForBookEntry.Designer.cs">
+      <DependentUpon>PublishListForBookEntry.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase.cs">
       <DependentUpon>BookStoreDBModel.tt</DependentUpon>
@@ -313,6 +337,9 @@
       <DependentUpon>BookStoreDBModel.edmx</DependentUpon>
       <LastGenOutput>BookStoreDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-bookmark-48 %281%29.png" />
+    <None Include="Resources\icons8-supplier-48.png" />
+    <None Include="Resources\icons8-hangar-48 %281%29.png" />
     <None Include="Resources\icons8-save-all-96.png" />
     <None Include="Resources\icons8-new-80.png" />
     <None Include="Resources\icons8-new-40.png" />
@@ -371,6 +398,12 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AStockFrm.resx">
+      <DependentUpon>AStockFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorListForBookEntry.resx">
+      <DependentUpon>AuthorListForBookEntry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookFormForBooking.resx">
       <DependentUpon>BookFormForBooking.cs</DependentUpon>
     </EmbeddedResource>
@@ -449,12 +482,18 @@
     <EmbeddedResource Include="frmSupplierList.resx">
       <DependentUpon>frmSupplierList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenreListForBookEntry.resx">
+      <DependentUpon>GenreListForBookEntry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PublishListForBookEntry.resx">
+      <DependentUpon>PublishListForBookEntry.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

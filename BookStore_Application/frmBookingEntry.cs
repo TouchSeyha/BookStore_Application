@@ -201,14 +201,6 @@ namespace BookStore_Application
             frmBookingList.Show();
         }
 
-        private void btnShowBookId_Click(object sender, EventArgs e)
-        {
-            BookFormForBooking bookList = new BookFormForBooking();
-
-            bookList.bookingEntry = this;
-            bookList.ShowDialog();
-        }
-
         private void btnClearNew_Click(object sender, EventArgs e)
         {
             MainClear();
@@ -403,6 +395,14 @@ namespace BookStore_Application
             double amountRemain = finalTotalPrice - totalAmountPay;
 
             txtboxAmountRemain.Text = amountRemain.ToString();
+        }
+
+        private void bookStorage_Click(object sender, EventArgs e)
+        {
+            BookFormForBooking bookList = new BookFormForBooking();
+
+            bookList.bookingEntry = this;
+            bookList.ShowDialog();
         }
     }
 }

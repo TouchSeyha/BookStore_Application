@@ -19,7 +19,7 @@ namespace BookStore_Application
 
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
-        public frmBookEntry bookEntry = null;
+        
 
         public frmStockEntry StockEntry = null;
 
@@ -53,7 +53,6 @@ namespace BookStore_Application
                     string value = dgvBook.SelectedRows[0].Cells[0].Value.ToString();
                     int BookId = int.Parse(value);
 
-                    //bookEntry.LoadDataFromBookId(BookId);
                     purchaseEntry.LoadDataToForm(BookId);
                     Close();
                 }

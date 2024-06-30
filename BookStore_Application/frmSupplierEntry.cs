@@ -65,6 +65,13 @@ namespace BookStore_Application
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(txtSupplierName.Text) || string.IsNullOrEmpty(txtPhone.Text) ||
+                string.IsNullOrEmpty(txtAddress.Text))
+            {
+                MessageBox.Show("Please Input Every Details!");
+                return;
+            }
+
             Supplier supplier = new Supplier();
 
             supplier.SupplierId = GetLatestSupplierId() + 1;
@@ -84,6 +91,14 @@ namespace BookStore_Application
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtSupplierName.Text) || string.IsNullOrEmpty(txtPhone.Text) ||
+                string.IsNullOrEmpty(txtAddress.Text))
+            {
+                MessageBox.Show("Please Choose a Record to Update!");
+                return;
+            }
+
             int supId = int.Parse(txtSupplierId.Text);
             string supplierName = txtSupplierName.Text;
             string phone = txtPhone.Text;
@@ -110,6 +125,14 @@ namespace BookStore_Application
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtSupplierName.Text) || string.IsNullOrEmpty(txtPhone.Text) ||
+                string.IsNullOrEmpty(txtAddress.Text))
+            {
+                MessageBox.Show("Please Choose a Record to Delete!");
+                return;
+            }
+
+
             int spId = int.Parse(txtSupplierId.Text);
 
             var supplier = db.Suppliers

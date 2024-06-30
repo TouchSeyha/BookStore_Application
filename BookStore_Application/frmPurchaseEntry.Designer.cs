@@ -28,14 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClearNew = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnGetData = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dgvSale = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,14 +45,12 @@
             this.txtDiscount = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblStock = new System.Windows.Forms.Label();
-            this.btnShowBookId = new System.Windows.Forms.Button();
             this.txtTotalPrice = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtSellingprice = new System.Windows.Forms.TextBox();
             this.txtBookTitle = new System.Windows.Forms.TextBox();
             this.txtboxFinalTotalPrice = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnNew = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.txtboxAmountRemain = new System.Windows.Forms.TextBox();
@@ -65,64 +58,29 @@
             this.txtboxAmountPaid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.cmbEmployee = new System.Windows.Forms.ComboBox();
             this.cmbCustomer = new System.Windows.Forms.ComboBox();
             this.txtInvoice = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnClearNew = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.bookStorage = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookStorage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnClearNew
-            // 
-            this.btnClearNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearNew.BackColor = System.Drawing.Color.LightCoral;
-            this.btnClearNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearNew.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnClearNew.Location = new System.Drawing.Point(32, 40);
-            this.btnClearNew.Margin = new System.Windows.Forms.Padding(1);
-            this.btnClearNew.Name = "btnClearNew";
-            this.btnClearNew.Size = new System.Drawing.Size(304, 55);
-            this.btnClearNew.TabIndex = 67;
-            this.btnClearNew.Text = "NEW";
-            this.btnClearNew.UseVisualStyleBackColor = false;
-            this.btnClearNew.Click += new System.EventHandler(this.btnClearNew_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.Location = new System.Drawing.Point(32, 112);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(1);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(304, 55);
-            this.btnSave.TabIndex = 64;
-            this.btnSave.Text = "SAVE";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnGetData
-            // 
-            this.btnGetData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGetData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGetData.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGetData.Location = new System.Drawing.Point(32, 180);
-            this.btnGetData.Margin = new System.Windows.Forms.Padding(1);
-            this.btnGetData.Name = "btnGetData";
-            this.btnGetData.Size = new System.Drawing.Size(304, 55);
-            this.btnGetData.TabIndex = 66;
-            this.btnGetData.Text = "GET DATA";
-            this.btnGetData.UseVisualStyleBackColor = false;
-            this.btnGetData.Click += new System.EventHandler(this.btnGetData_Click);
             // 
             // label5
             // 
@@ -157,21 +115,6 @@
             this.label8.TabIndex = 80;
             this.label8.Text = "Total Price :";
             // 
-            // btnDelete
-            // 
-            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.BackColor = System.Drawing.Color.LightCoral;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDelete.Location = new System.Drawing.Point(521, 112);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(1);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(146, 56);
-            this.btnDelete.TabIndex = 65;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -188,21 +131,6 @@
             this.label7.TabIndex = 72;
             this.label7.Text = "Price  :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.BackColor = System.Drawing.Color.LightGreen;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAdd.Location = new System.Drawing.Point(521, 42);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(1);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(146, 56);
-            this.btnAdd.TabIndex = 63;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label6
             // 
@@ -309,9 +237,9 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.btnClearNew);
             this.panel4.Controls.Add(this.btnSave);
-            this.panel4.Controls.Add(this.btnGetData);
             this.panel4.Location = new System.Drawing.Point(1098, 93);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
@@ -348,26 +276,15 @@
             // 
             this.lblStock.AutoSize = true;
             this.lblStock.BackColor = System.Drawing.Color.Transparent;
-            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.lblStock.Location = new System.Drawing.Point(451, 76);
+            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.lblStock.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblStock.Location = new System.Drawing.Point(239, 262);
             this.lblStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(67, 26);
+            this.lblStock.Size = new System.Drawing.Size(88, 31);
             this.lblStock.TabIndex = 92;
             this.lblStock.Text = "Stock";
             this.lblStock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnShowBookId
-            // 
-            this.btnShowBookId.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowBookId.Location = new System.Drawing.Point(462, 42);
-            this.btnShowBookId.Name = "btnShowBookId";
-            this.btnShowBookId.Size = new System.Drawing.Size(43, 31);
-            this.btnShowBookId.TabIndex = 91;
-            this.btnShowBookId.Text = "...";
-            this.btnShowBookId.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnShowBookId.UseVisualStyleBackColor = true;
-            this.btnShowBookId.Click += new System.EventHandler(this.btnShowBookId_Click);
             // 
             // txtTotalPrice
             // 
@@ -429,10 +346,11 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.bookStorage);
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.txtDiscount);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblStock);
-            this.panel2.Controls.Add(this.btnShowBookId);
             this.panel2.Controls.Add(this.txtTotalPrice);
             this.panel2.Controls.Add(this.txtQuantity);
             this.panel2.Controls.Add(this.txtSellingprice);
@@ -447,23 +365,8 @@
             this.panel2.Location = new System.Drawing.Point(0, 93);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(685, 289);
+            this.panel2.Size = new System.Drawing.Size(685, 299);
             this.panel2.TabIndex = 98;
-            // 
-            // btnNew
-            // 
-            this.btnNew.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnNew.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnNew.Location = new System.Drawing.Point(521, 181);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(1);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(146, 56);
-            this.btnNew.TabIndex = 67;
-            this.btnNew.Text = "Clear";
-            this.btnNew.UseVisualStyleBackColor = false;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // panel3
             // 
@@ -555,12 +458,12 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.cmbEmployee);
             this.panel1.Controls.Add(this.cmbCustomer);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtInvoice);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(1);
@@ -568,88 +471,149 @@
             this.panel1.Size = new System.Drawing.Size(1599, 89);
             this.panel1.TabIndex = 97;
             // 
-            // label13
+            // cmbEmployee
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label13.Location = new System.Drawing.Point(979, 31);
-            this.label13.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(159, 31);
-            this.label13.TabIndex = 86;
-            this.label13.Text = "Employee :";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cmbEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.cmbEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEmployee.ForeColor = System.Drawing.Color.White;
+            this.cmbEmployee.FormattingEnabled = true;
+            this.cmbEmployee.Location = new System.Drawing.Point(1151, 33);
+            this.cmbEmployee.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEmployee.Name = "cmbEmployee";
+            this.cmbEmployee.Size = new System.Drawing.Size(275, 30);
+            this.cmbEmployee.TabIndex = 98;
             // 
-            // label11
+            // cmbCustomer
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(547, 30);
-            this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 31);
-            this.label11.TabIndex = 85;
-            this.label11.Text = "Supplier :";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cmbCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.cmbCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCustomer.ForeColor = System.Drawing.Color.White;
+            this.cmbCustomer.FormattingEnabled = true;
+            this.cmbCustomer.Location = new System.Drawing.Point(689, 31);
+            this.cmbCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCustomer.Name = "cmbCustomer";
+            this.cmbCustomer.Size = new System.Drawing.Size(275, 30);
+            this.cmbCustomer.TabIndex = 92;
+            // 
+            // txtInvoice
+            // 
+            this.txtInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.txtInvoice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInvoice.ForeColor = System.Drawing.Color.White;
+            this.txtInvoice.Location = new System.Drawing.Point(359, 29);
+            this.txtInvoice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInvoice.Name = "txtInvoice";
+            this.txtInvoice.ReadOnly = true;
+            this.txtInvoice.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtInvoice.Size = new System.Drawing.Size(67, 32);
+            this.txtInvoice.TabIndex = 90;
+            this.txtInvoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::BookStore_Application.Properties.Resources.icons8_view_48;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(53, 188);
+            this.button1.Margin = new System.Windows.Forms.Padding(1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(262, 82);
+            this.button1.TabIndex = 68;
+            this.button1.Text = "GET DATA";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnGetData_Click);
+            // 
+            // btnClearNew
+            // 
+            this.btnClearNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearNew.BackColor = System.Drawing.Color.Transparent;
+            this.btnClearNew.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.btnClearNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearNew.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnClearNew.Image = global::BookStore_Application.Properties.Resources.icons8_new_80;
+            this.btnClearNew.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnClearNew.Location = new System.Drawing.Point(53, 42);
+            this.btnClearNew.Margin = new System.Windows.Forms.Padding(1);
+            this.btnClearNew.Name = "btnClearNew";
+            this.btnClearNew.Size = new System.Drawing.Size(126, 127);
+            this.btnClearNew.TabIndex = 67;
+            this.btnClearNew.Text = "NEW";
+            this.btnClearNew.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnClearNew.UseVisualStyleBackColor = false;
+            this.btnClearNew.Click += new System.EventHandler(this.btnClearNew_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSave.Image = global::BookStore_Application.Properties.Resources.icons8_save_all_96;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSave.Location = new System.Drawing.Point(189, 42);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(1);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(126, 127);
+            this.btnSave.TabIndex = 64;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BookStore_Application.Properties.Resources.icons8_male_user_481;
+            this.pictureBox1.Location = new System.Drawing.Point(1098, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 99;
+            this.pictureBox1.TabStop = false;
             // 
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label12.Location = new System.Drawing.Point(168, 31);
+            this.label12.Image = global::BookStore_Application.Properties.Resources.icons8_receipt_48;
+            this.label12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label12.Location = new System.Drawing.Point(190, 14);
             this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(192, 31);
-            this.label12.TabIndex = 84;
-            this.label12.Text = "Purchase ID :";
+            this.label12.Size = new System.Drawing.Size(194, 55);
+            this.label12.TabIndex = 91;
+            this.label12.Text = "   Invoice :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cmbEmployee
+            // label11
             // 
-            this.cmbEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEmployee.FormattingEnabled = true;
-            this.cmbEmployee.Location = new System.Drawing.Point(1141, 30);
-            this.cmbEmployee.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbEmployee.Name = "cmbEmployee";
-            this.cmbEmployee.Size = new System.Drawing.Size(241, 30);
-            this.cmbEmployee.TabIndex = 14;
-            // 
-            // cmbCustomer
-            // 
-            this.cmbCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCustomer.FormattingEnabled = true;
-            this.cmbCustomer.Location = new System.Drawing.Point(689, 30);
-            this.cmbCustomer.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbCustomer.Name = "cmbCustomer";
-            this.cmbCustomer.Size = new System.Drawing.Size(241, 30);
-            this.cmbCustomer.TabIndex = 13;
-            // 
-            // txtInvoice
-            // 
-            this.txtInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInvoice.Location = new System.Drawing.Point(363, 32);
-            this.txtInvoice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtInvoice.Name = "txtInvoice";
-            this.txtInvoice.ReadOnly = true;
-            this.txtInvoice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtInvoice.Size = new System.Drawing.Size(67, 32);
-            this.txtInvoice.TabIndex = 12;
-            this.txtInvoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label11.Image = global::BookStore_Application.Properties.Resources.icons8_supplier_48;
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Location = new System.Drawing.Point(496, 17);
+            this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(210, 52);
+            this.label11.TabIndex = 85;
+            this.label11.Text = "      Supplier :";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -659,13 +623,86 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 15F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Image = global::BookStore_Application.Properties.Resources.icons8_grocery_store_96;
             this.label3.Location = new System.Drawing.Point(1, -1);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 89);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Purchase Entry";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bookStorage
+            // 
+            this.bookStorage.Image = global::BookStore_Application.Properties.Resources.icons8_bookmark_48__1_;
+            this.bookStorage.Location = new System.Drawing.Point(451, 40);
+            this.bookStorage.Name = "bookStorage";
+            this.bookStorage.Size = new System.Drawing.Size(46, 48);
+            this.bookStorage.TabIndex = 111;
+            this.bookStorage.TabStop = false;
+            this.bookStorage.Click += new System.EventHandler(this.btnShowBookId_Click);
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Image = global::BookStore_Application.Properties.Resources.icons8_hangar_48__1_;
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.Location = new System.Drawing.Point(38, 246);
+            this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(198, 49);
+            this.label10.TabIndex = 110;
+            this.label10.Text = "       Stock Left  :";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // btnNew
+            // 
+            this.btnNew.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(69)))), ((int)(((byte)(25)))));
+            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnNew.Image = global::BookStore_Application.Properties.Resources.icons8_trash_48;
+            this.btnNew.Location = new System.Drawing.Point(521, 103);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(1);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(146, 56);
+            this.btnNew.TabIndex = 67;
+            this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDelete.Image = global::BookStore_Application.Properties.Resources.icons8_erase_48;
+            this.btnDelete.Location = new System.Drawing.Point(521, 188);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(1);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(146, 56);
+            this.btnDelete.TabIndex = 65;
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAdd.Image = global::BookStore_Application.Properties.Resources.icons8_plus_48;
+            this.btnAdd.Location = new System.Drawing.Point(521, 42);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(1);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(146, 56);
+            this.btnAdd.TabIndex = 63;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // frmPurchaseEntry
             // 
@@ -689,6 +726,8 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookStorage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -696,7 +735,6 @@
         #endregion
         private System.Windows.Forms.Button btnClearNew;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnGetData;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnDelete;
@@ -708,18 +746,12 @@
         private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblStock;
-        private System.Windows.Forms.Button btnShowBookId;
         private System.Windows.Forms.TextBox txtTotalPrice;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtSellingprice;
         private System.Windows.Forms.TextBox txtBookTitle;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox cmbEmployee;
-        private System.Windows.Forms.ComboBox cmbCustomer;
-        private System.Windows.Forms.TextBox txtInvoice;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtboxFinalTotalPrice;
         private System.Windows.Forms.Panel panel2;
@@ -738,5 +770,13 @@
         private System.Windows.Forms.TextBox txtboxAmountRemain;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtboxAmountPaid;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtInvoice;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbCustomer;
+        private System.Windows.Forms.ComboBox cmbEmployee;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox bookStorage;
     }
 }

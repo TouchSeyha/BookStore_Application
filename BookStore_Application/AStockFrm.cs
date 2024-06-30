@@ -10,24 +10,21 @@ using System.Windows.Forms;
 
 namespace BookStore_Application
 {
-    public partial class frmBookList : Form
+    public partial class AStockFrm : Form
     {
-        public frmBookList()
+        public AStockFrm()
         {
             InitializeComponent();
         }
 
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
-        public frmBookEntry bookEntry = null; 
-
-        public frmPurchaseEntry purchaseEntry = null;
-
-        private void frmBookList_Load(object sender, EventArgs e)
+        public frmStockEntry StockEntry = null;
+        private void AStockFrm_Load(object sender, EventArgs e)
         {
             foreach (Book c in db.Books)
             {
-               
+
                 dgvBook.Rows.Add(c.BookId,
                                         c.Title,
                                         c.Author.AuthorName,
@@ -36,22 +33,22 @@ namespace BookStore_Application
                                         c.TotalPage,
                                         c.CostPrice,
                                         c.SellingPrice,
-                                        c.Note,
-                                        c.Created,
-                                        c.Updated);
+                                        c.Note
+                                        );
             }
         }
 
         private void dgvBook_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (bookEntry != null)
+            if (StockEntry != null)
             {
                 if (dgvBook.SelectedRows.Count > 0)
                 {
                     string value = dgvBook.SelectedRows[0].Cells[0].Value.ToString();
                     int BookId = int.Parse(value);
 
-                    bookEntry.LoadDataFromBookId(BookId);
+                  
+                    StockEntry.LoadDataToForm(BookId);
                     Close();
                 }
             }

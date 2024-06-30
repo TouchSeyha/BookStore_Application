@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace BookStore_Application
 {
-    public partial class frmAuthorList : Form
+    public partial class AuthorListForBookEntry : Form
     {
-        public frmAuthorList()
+        public AuthorListForBookEntry()
         {
             InitializeComponent();
         }
 
         private BookStoreDBEntities db = new BookStoreDBEntities();
 
-        public frmAuthorEntry authorEntry = null;
+        public frmBookEntry bookEntry = null;
 
-        private void frmAuthorList_Load(object sender, EventArgs e)
+        private void AuthorListForBookEntry_Load(object sender, EventArgs e)
         {
             foreach (Author c in db.Authors)
             {
@@ -35,14 +35,14 @@ namespace BookStore_Application
 
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (authorEntry != null)
+            if (bookEntry != null)
             {
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
                     string value = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                     int AuthorId = int.Parse(value);
 
-                    authorEntry.LoadDataFromAuthorId(AuthorId);
+                    bookEntry.LoadDataFrombook(AuthorId);
                     Close();
                 }
             }

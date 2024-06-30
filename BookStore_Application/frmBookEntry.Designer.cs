@@ -53,7 +53,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.bookStorage = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookStorage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -373,10 +383,10 @@
             this.btnTrash.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrash.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnTrash.Image = global::BookStore_Application.Properties.Resources.icons8_trash_48;
-            this.btnTrash.Location = new System.Drawing.Point(573, 147);
+            this.btnTrash.Location = new System.Drawing.Point(563, 148);
             this.btnTrash.Margin = new System.Windows.Forms.Padding(1);
             this.btnTrash.Name = "btnTrash";
-            this.btnTrash.Size = new System.Drawing.Size(51, 50);
+            this.btnTrash.Size = new System.Drawing.Size(51, 49);
             this.btnTrash.TabIndex = 60;
             this.btnTrash.UseVisualStyleBackColor = false;
             this.btnTrash.Click += new System.EventHandler(this.btnTrash_Click);
@@ -432,12 +442,70 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // bookStorage
+            // 
+            this.bookStorage.Image = global::BookStore_Application.Properties.Resources.icons8_author_48;
+            this.bookStorage.Location = new System.Drawing.Point(575, 243);
+            this.bookStorage.Name = "bookStorage";
+            this.bookStorage.Size = new System.Drawing.Size(39, 39);
+            this.bookStorage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bookStorage.TabIndex = 108;
+            this.bookStorage.TabStop = false;
+            this.bookStorage.Click += new System.EventHandler(this.bookStorage_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BookStore_Application.Properties.Resources.icons8_bookmark_481;
+            this.pictureBox1.Location = new System.Drawing.Point(575, 283);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 108;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BookStore_Application.Properties.Resources.icons8_bookmark_481;
+            this.pictureBox2.Location = new System.Drawing.Point(575, 328);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 108;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::BookStore_Application.Properties.Resources.icons8_news_48;
+            this.pictureBox3.Location = new System.Drawing.Point(575, 287);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 108;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::BookStore_Application.Properties.Resources.icons8_comedy_48;
+            this.pictureBox4.Location = new System.Drawing.Point(575, 332);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 108;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // frmBookEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(884, 632);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bookStorage);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -470,6 +538,11 @@
             this.Load += new System.EventHandler(this.frmBookEntry_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookStorage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,5 +575,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox bookStorage;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

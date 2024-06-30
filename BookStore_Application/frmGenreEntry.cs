@@ -59,6 +59,11 @@ namespace BookStore_Application
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtGenreName.Text))
+            {
+                MessageBox.Show("Please Enter the Genre Name");
+                return;
+            }
             Genre genre = new Genre();
 
             genre.GenreId = GetLatestGenreId() + 1;
@@ -76,11 +81,38 @@ namespace BookStore_Application
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtGenreName.Text))
+            {
+                MessageBox.Show("Please Enter the Genre Name");
+                return;
+            }
 
+            int authorId = int.Parse(txtGenreId.Text);
+            string authorName = txtGenreName.Text;
+     
+
+            var author = db.Genres
+                            .Where(c => c.GenreId == authorId)
+                            .FirstOrDefault();
+            if (author != null)
+            {
+                author.GenreName = authorName;
+                author.Updated = DateTime.Now;
+                db.SaveChanges();
+                MessageBox.Show("Update Successfully!");
+                Clear();
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(txtGenreName.Text))
+            {
+                MessageBox.Show("Please Enter the Genre Name");
+                return;
+            }
+
             int bookId = int.Parse(txtGenreId.Text);
 
             var book = db.Genres
